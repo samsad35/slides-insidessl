@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Interspeech - InsideSSL </title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link href="./assets/katex.min.css" rel="stylesheet">
+    <link href="./assets/slides_pyannote.css" rel="stylesheet" type="text/css">
+    <link href="./assets/grid.css" rel="stylesheet" type="text/css">
+    <!-- Change equation font color defined in assests/slides.css -->
+    <script type="text/javascript">
+        document.documentElement.style
+            .setProperty('--eq_font_color', '#004c86');
+    </script>
+    <script src="./assets/katex.min.js"></script>
+    <script
+            defer
+            src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+    ></script>
+    <link
+            href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"
+            rel="stylesheet"
+    />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        div.scroll-container {
+            background-color: #ffffff;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 5px;
+        }
+
+        div.scroll-container img {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<textarea id="source">
+
+class: middle, center, start-slide
+
+<!--- 
+https://katex.org/docs/supported.html#macros
+--->
+
+$$ \global\def\issl{\small\text{\texttt{INSIDE}SSL}} $$
+
+.italic[Interspeech 2026, ICC Sydney, Australia]
+
+.center.boite-90[
+## $\issl$: Understanding Self-Supervised Speech Representations using a Model-Centric Perspective
+
+ Long Oral 2 - Speech Representations and Alignment
+]
+
+.grid[
+
+.kol-1-4[
+
+]
+
+.kol-1-4[
+.center.width-80.circle[![](images/colab/sadok-samir.jpg)]
+.small.bold[Samir Sadok]
+]
+
+.kol-1-4[
+.center.width-85.circle[![](images/colab/xavi-square-light.jpg)
+<br>
+.small[Xavier Alameda-Pineda]
+]
+]
+]
+
+.kol-1-1[
+.small.center[Inria, Univ. Grenoble Alpes, CNRS, LJK, France]
+
+]
+
+
+---
+class: center, middle
+
+# Introduction and Motivation
+
+---
+exclude: false
+
+## Supervised learning
+
+.center[The majority of successful applications of machine/deep learning rely on **supervised learning**.]
+
+.grid[
+.kol-1-2[
+.center.width-50[![](images/Deep Speech 2.png)]
+.center.small[Speech Recognition with .bold[Deep Speech 2] <br> .small.blue[(Amodei et al., 2015)]]
+]
+
+.kol-1-2[
+.medium[
+Deep Speech 2 is a *fully supervised* deep learning system .small.blue[(Amodei et al., 2015)], trained using:
+
+- **11,940** hours of english speech;
+- **8** million utterances (~5.3 seconds each utterance).
+
+.boite-wo-border[
+Word error rate (WER) is *3.6%*. 
+While human performance for the same test dataset is *5%*.
+]
+]
+]
+]
+
+.alert-90[It is intractable to collect labels for every scenario and task.]
+
+<br>
+
+.credit[
+  Amodei et al., (2015). Deep speech 2: End-to-end speech recognition in english and mandarin. In International conference on machine learning (pp. 173-182). PMLR.
+  ]
+
+???
+Let's start with **supervised learning**, which has been the foundation of most successful applications in machine and deep learning.  
+
+A good example is **Deep Speech 2**, proposed by Amodei and colleagues in 2015.  
+It is a fully supervised deep learning system for **speech recognition**, trained on a massive dataset — almost **12,000 hours of English speech**, or about **8 million utterances**, each roughly five seconds long.  
+
+The model achieved a **word error rate of only 3.6%**, even surpassing **human performance**, which was around **5%** on the same test set.  
+
+However, despite these impressive results, **supervised learning remains highly data-hungry**.  
+Collecting and labeling such huge datasets for every possible task or scenario is simply **intractable**.
+
+---
+exclude: false
+
+## Self-supervised learning (SSL)
+
+.center[We need **unsupervised** or **self-supervised** methods that can learn to unveil the **underlying structure** of the data without or with few ground-truth labels.]
+
+.kol-1-2[
+.center.width-90[![](images/wav2vec.png)]
+.center.small[Self-Supervised learning of speech representations: <br> .bold[Wav2vec 2.0] .small.blue[(Baevski et al., 2020)]]
+]
+.kol-1-2[
+.small[.bold[wav2vec 2.0] masks the speech input in the latent space and solves a contrastive task defined over a quantization of the latent representations which are jointly learned.
+- **10 min** of labeled data: WER = *4.6%*;
+- **10 h** of labeled data: WER = *2.4%*.
+
+.boite-wo-border[
+With these unsupervised methods, we are able to outperform fully supervised methods  — while using *150x* less transcribed data.
+]
+]]
+
+.grid[
+.alert-90[self-supervised methods have emerged as promising approaches.]
+]
+  
+.credit[
+Baevski et al., (2020). wav2vec 2.0: A framework for self-supervised learning of speech representations. Advances in neural information processing systems, 33, 12449-12460.]
+
+???
+
+After seeing the power and the limits of **supervised learning**, we naturally turn to **self-supervised learning**, or **SSL**.  
+
+The idea here is to learn from **raw data itself**, without relying on large amounts of ground-truth labels.  
+In other words, we want models that can **unveil the underlying structure** of the data on their own.  
+
+A great example of this paradigm is **wav2vec 2.0**, introduced by **Baevski and colleagues in 2020**. The model takes a speech signal, **masks parts of it in the latent space**,  
+and learns to **predict the masked regions** through a **contrastive task** over a quantized latent representation — and importantly, both the representation and the quantization are **learned jointly**.  
+
+The results are remarkable:  
+with only **10 minutes of labeled data**, wav2vec 2.0 reaches a **word error rate of 4.6%**,  
+and with **10 hours of labeled data**, the error drops to **2.4%**.  
+
+This means that **self-supervised methods can outperform fully supervised ones**,  
+while using **150 times less transcribed data**.  
+
+So, **self-supervised learning has clearly emerged as a promising direction** for learning powerful representations efficiently.
+
+
+---
+exclude: false
+
+## SSL Audio Architecture: A Common Backbone
+
+.center[Despite different pre-training objectives, prominent SSL speech models share a **standardized architecture**.]
+
+.grid[
+.kol-1-3[
+.center.width-50[![](images/ssl.svg)]
+.caption[Typical SSL Speech Architecture (e.g., Wav2Vec2, HuBERT, WavLM)]
+]
+
+.kol-2-3[
+.medium[
+Two main components:
+
+1. .boxed[.bold[Feature Extractor (CNN):]]
+.small[
+- Processes raw audio waveforms.
+- Outputs low-level latent representations (often updated less frequently).
+]
+
+
+]
+]
+]
+
+<!-- .alert-90[Understanding these internal layer-wise dynamics remains an ongoing challenge.] -->
+
+???
+Now that we've seen the power of Self-Supervised Learning, let's look under the hood. 
+
+Interestingly, despite having very different pre-training objectives—whether contrastive like Wav2Vec2, or masked prediction like HuBERT and WavLM—these prominent SSL models share a highly standardized architecture.
+
+Typically, it starts with a Convolutional Neural Network (CNN) feature extractor that takes the raw audio waveform and turns it into low-level latent representations. 
+
+
+
+---
+count: false
+exclude: false
+
+## SSL Audio Architecture: A Common Backbone
+
+.center[Despite different pre-training objectives, prominent SSL speech models share a **standardized architecture**.]
+
+.grid[
+.kol-1-3[
+.center.width-50[![](images/ssl-1.svg)]
+.caption[Typical SSL Speech Architecture (e.g., Wav2Vec2, HuBERT, WavLM)]
+]
+
+.kol-2-3[
+.medium[
+Two main components:
+
+1. .bold[Feature Extractor (CNN):] 
+.small[
+- Processes raw audio waveforms.
+- Outputs low-level latent representations (often updated less frequently).
+]
+2. .boxed[.bold[Transformer Backbone:]]
+.small[
+- A multi-layer bidirectional Transformer *(e.g., 12 layers for BASE, 24 for LARGE)*.
+- Builds deep, contextualized representations by looking at the entire sequence.
+]
+
+
+.small-vspace[
+]
+
+
+]
+]
+]
+
+???
+These are then fed into a Contextualizer, which is usually a multi-layer bidirectional Transformer. For a "BASE" model, this means 12 layers of attention mechanisms building deep, contextualized representations.
+
+
+---
+count: false
+exclude: false
+
+## SSL Audio Architecture: A Common Backbone
+
+.center[Despite different pre-training objectives, prominent SSL speech models share a **standardized architecture**.]
+
+.grid[
+.kol-1-3[
+.center.width-50[![](images/ssl-1.svg)]
+.caption[Typical SSL Speech Architecture (e.g., Wav2Vec2, HuBERT, WavLM)]
+]
+
+.kol-2-3[
+.medium[
+Two main components:
+
+1. .bold[Feature Extractor (CNN):] 
+.small[
+- Processes raw audio waveforms.
+- Outputs low-level latent representations (often updated less frequently).
+]
+2. .boxed[.bold[Transformer Backbone:]]
+.small[
+- A multi-layer bidirectional Transformer *(e.g., 12 layers for BASE, 24 for LARGE)*.
+- Builds deep, contextualized representations by looking at the entire sequence.
+]
+
+
+.small-vspace[
+]
+
+.center.boite-90[
+**The Black Box:** We know the architecture, but we lack an understanding of *how* information actually evolves layer by layer.
+]
+]
+]
+]
+
+
+???
+
+But here is the catch: This Transformer backbone is essentially a Black Box. 
+While they achieve state-of-the-art results, understanding exactly how information is encoded, compressed, and abstracted layer by layer remains an ongoing challenge. 
+And this specific challenge is exactly what we address in this paper.
+
+---
+exclude: false
+
+## How do we understand these Black Boxes?
+
+.center[Most prior studies analyze SSL models primarily through their **correlation with predefined speech attributes**.]
+
+
+.grid[
+.kol-1-3[
+.center.width-50[![](images/ssl-all.svg)]
+.caption[Typical SSL Speech Architecture (e.g., Wav2Vec2, HuBERT, WavLM)]
+]
+
+.kol-2-3[
+
+.center.width-100[![](images/litterature.svg)]
+
+.boite-90[
+**The limitation:** These approaches are **Task-Centric**. They tell us *what* the model can do (using external labels), but not intrinsically *how* it organizes information.
+]
+]
+]
+???
+How do we usually analyze these SSL black boxes? Through probing. We attach classifiers to see if a layer can predict predefined labels, like speaker identity or phonemes.
+
+But there is a fundamental flaw: this approach is entirely task-centric.
+
+It tells us what the model can do on a specific benchmark, but completely fails to explain how it intrinsically organizes, compresses, and routes information. We need a way to evaluate these networks from the inside out—without relying on human annotations.
+---
+count: false
+
+## How do we understand these Black Boxes?
+
+.center[Most prior studies analyze SSL models primarily through their **correlation with predefined speech attributes**.]
+
+
+.grid[
+.kol-1-3[
+.center.width-50[![](images/ssl-all.svg)]
+.caption[Typical SSL Speech Architecture (e.g., Wav2Vec2, HuBERT, WavLM)]
+]
+
+.kol-2-3[
+
+.center.width-100[![](images/litterature-1.svg)]
+
+.boite-90[
+**The limitation:** These approaches are **Task-Centric**. They tell us *what* the model can do (using external labels), but not intrinsically *how* it organizes information.
+]
+]
+]
+
+???
+We end up with probing graphs like these—mapping layer depth against accuracy for specific labels like speaker, pitch, or emotion.
+
+But the fundamental flaw remains: these curves are entirely task-centric.
+
+They only show us where a human-defined label is most accessible, but they completely fail to explain how the network intrinsically compresses and structures that information natively.
+
+
+---
+class: middle, question-slide
+exclude: false
+
+## The Core Question: Looking Inside the Black Box
+
+.center[Currently, we rely **heavily** on downstream tasks to understand SSL models.]
+
+.small-vspace[
+]
+
+.medium[
+- But what if we don't have task-specific labels?
+- How is information structured intrinsically within the network?
+- How does the model compress data and reorganize its geometry layer by layer?
+- At what specific depth do representations actually become robust to acoustic noise?
+- How is information transferred across the different layers?
+]
+
+
+.small-vspace[
+]
+
+.alert-90[
+We need intrinsic, task-agnostic metrics to analyze SSL models directly from their internal representations.
+]
+
+???
+To address the limitations of task-centric probing, we must ask fundamental questions about the model's inner workings.
+
+How does the network structure the acoustic signal without relying on labels? How is information compressed, and how does the geometric manifold unfold across layers? Where does the representation become robust to noise?
+
+These questions drive our core motivation: the need for intrinsic, task-agnostic metrics to truly understand SSL representations.
+
+---
+class: center, middle
+
+# $\issl$'s Methodology
+
+---
+exclude: false
+
+## Introducing $\issl$
+
+.center.medium[To address this, we propose $\issl$: a model-centric, task-agnostic framework.]
+
+Analyzing the intrinsic properties of individual layers:
+
+
+.grid[
+.kol-1-3[
+.center.width-100[![](images/insidessl/insidessl-1.svg)]
+]
+
+.medium.kol-2-3[
+.bold[<u>Per-layer Perspectives:</u>]
+
+ - .boxed-compression[.orange[&#x2780; Compression (Entropy)]] How is information density evolving?
+
+]
+]
+
+???
+To answer these questions, we introduce **InsideSSL**: a model-centric, task-agnostic framework.
+
+Rather than using external labels, we analyze the intrinsic properties of individual layers. Our first perspective is **Compression**, measured via entropy. This tells us exactly how information density evolves and compresses as the signal moves deeper into the network.
+
+
+---
+count: false
+exclude: false
+
+## Introducing $\issl$
+
+.center.medium[To address this, we propose $\issl$: a model-centric, task-agnostic framework.]
+
+Analyzing the intrinsic properties of individual layers:
+
+.grid[
+.kol-1-3[
+.center.width-100[![](images/insidessl/insidessl-2.svg)]
+]
+
+.medium.kol-2-3[
+.bold[<u>Per-layer Perspectives:</u>]
+
+ - .boxed-compression[.orange[&#x2780; Compression (Entropy)]] How is information density evolving?
+ 
+ - .boxed-geometry[.green[&#x2781; Geometry (Curvature)]] How does the representation manifold unfold?
+
+]
+]
+
+???
+Our second perspective is **Geometry**, evaluated through curvature. This tracks the physical shape of the latent space, revealing exactly how the representation manifold unfolds and organizes itself layer by layer.
+
+---
+count: false
+exclude: false
+
+## Introducing $\issl$
+
+.center.medium[To address this, we propose $\issl$: a model-centric, task-agnostic framework.]
+
+Analyzing the intrinsic properties of individual layers:
+
+.grid[
+.kol-1-3[
+.center.width-100[![](images/insidessl/insidessl-3.svg)]
+]
+
+.medium.kol-2-3[
+.bold[<u>Per-layer Perspectives:</u>]
+
+ - .boxed-compression[.orange[&#x2780; Compression (Entropy)]] How is information density evolving?
+ 
+ - .boxed-geometry[.green[&#x2781; Geometry (Curvature)]] How does the representation manifold unfold?
+
+ - .boxed-robustness[.red[&#x2782; Robustness (Invariance)]] When does the model become stable to perturbations?
+
+]
+]
+
+???
+Our third per-layer perspective is Robustness, measured via an InfoNCE loss. This allows us to pinpoint exactly where the model strips away acoustic noise and builds invariant, stable representations.
+
+---
+count: false
+exclude: false
+
+## Introducing $\issl$
+
+.center.medium[To address this, we propose $\issl$: a model-centric, task-agnostic framework.]
+
+Analyzing the intrinsic properties of individual layers:
+
+.grid[
+.kol-1-3[
+.center.width-100[![](images/insidessl/insidessl-4.svg)]
+]
+
+.medium.kol-2-3[
+.bold[Per-layer Perspectives:]
+
+ - .boxed-compression[.orange[&#x2780; Compression (Entropy)]] How is information density evolving?
+ 
+ - .boxed-geometry[.green[&#x2781; Geometry (Curvature)]] How does the representation manifold unfold?
+
+ - .boxed-robustness[.red[&#x2782; Robustness (Invariance)]] When does the model become stable to perturbations?
+
+.bold[<u>Cross-layer Perspective:</u>]
+
+.boxed-gcm[.blue[&#x2783; Generative Compatibility Matrix (GCM)]] How well can representations from one depth be interpreted by another?
+
+]
+]
+
+???
+Finally, we move beyond individual layers with our cross-layer perspective: the Generative Compatibility Matrix, or GCM. Rather than looking at layers in isolation, this maps the inter-layer dependencies, showing us the precise trajectory of how information is routed, preserved, or pruned throughout the entire network hierarchy.
+
+
+---
+class: compression-slide
+
+## .orange[&#x2780;  Compression: Matrix-based Entropy]
+
+.center[How much information is preserved or compressed at layer $\ell$?]
+
+.bold[The Math]
+
+$$ \Large Z^{(\ell)} \xrightarrow[\text{Gram Matrix}]{K^{(\ell)} = Z^{(\ell)} (Z^{(\ell)})^\top} K^{(\ell)} \xrightarrow[\text{Normalize}]{\tilde{\lambda}\_r = \frac{\lambda\_r}{\text{Tr}(K^{(\ell)})}} \{\tilde{\lambda}\_r} \xrightarrow[\text{Entropy}]{- \sum_{r=1}^R \tilde{\lambda}\_r \log \tilde{\lambda}\_r} E^{(\ell)}(x) $$
+
+
+
+
+???
+Let's zoom in on our first intrinsic metric: Compression, measured via Matrix-based von Neumann Entropy.
+
+Mathematically, for a given layer, we take the token embeddings and compute their Gram matrix. Then, we extract its eigenvalues and normalize them so they sum to 1, treating them essentially as a probability distribution. Finally, we compute the Shannon entropy of this eigenvalue distribution.
+
+What does this tell us? It quantifies the spectral spread of the data. 
+If the entropy is low, it means most of the variance is captured by just a few dimensions—the signal is highly compressed and redundant. 
+If the entropy is high, the embeddings are spread across many dimensions, maintaining high diversity and informational density.
+
+
+---
+class: compression-slide
+count: false
+
+## .orange[&#x2780;  Compression: Matrix-based Entropy]
+
+.center[How much information is preserved or compressed at layer $\ell$?]
+
+.bold[The Math]
+
+$$ \Large Z^{(\ell)} \xrightarrow[\text{Gram Matrix}]{K^{(\ell)} = Z^{(\ell)} (Z^{(\ell)})^\top} K^{(\ell)} \xrightarrow[\text{Normalize}]{\tilde{\lambda}\_r = \frac{\lambda\_r}{\text{Tr}(K^{(\ell)})}} \{\tilde{\lambda}\_r} \xrightarrow[\text{Entropy}]{- \sum_{r=1}^R \tilde{\lambda}\_r \log \tilde{\lambda}\_r} E^{(\ell)}(x) $$
+
+
+.bold[The Intuition]
+
+This measures the **spectral spread** of the representation without needing explicit probability densities.
+
+- 📉 **Low Entropy:** Few dominant eigenvalues $\Rightarrow$ Low-dimensional subspace (Strong compression).
+- 📈 **High Entropy:** Uniform eigenvalues $\Rightarrow$ Spread across many dimensions (High diversity).
+
+
+???
+Let's zoom in on our first intrinsic metric: Compression, measured via Matrix-based von Neumann Entropy.
+
+Mathematically, for a given layer, we take the token embeddings and compute their Gram matrix. Then, we extract its eigenvalues and normalize them so they sum to 1, treating them essentially as a probability distribution. Finally, we compute the Shannon entropy of this eigenvalue distribution.
+
+What does this tell us? It quantifies the spectral spread of the data. 
+If the entropy is low, it means most of the variance is captured by just a few dimensions—the signal is highly compressed and redundant. 
+If the entropy is high, the embeddings are spread across many dimensions, maintaining high diversity and informational density.
+
+---
+class: compression-slide, middle
+
+## .orange[&#x2780;  Compression: Illustration]
+
+.center.width-100[![](images/insidessl/toy_diverse.png)]
+
+???
+To build intuition, let's step away from high-dimensional audio and look at a simple 2D toy example.
+Here, we have a cloud of highly dispersed, uncorrelated tokens.
+If we compute the eigenvalues of this space—shown on the right—we see they are roughly equal. The information is spread evenly across all available dimensions. Consequently, our matrix-based entropy is high. The representation is highly diverse
+
+---
+class: compression-slide, middle
+count: false
+
+## .orange[&#x2780;  Compression: Illustration]
+
+.center.width-100[![](images/insidessl/toy_compressed.png)]
+
+???
+Now, contrast this with highly correlated data.
+Here, all the tokens collapse along a single axis. If we look at the spectrum again, one dominant eigenvalue captures almost all the variance, while the other drops near zero.
+As a result, the entropy plummets.
+By tracking this exact entropy metric across the 768 dimensions of a Transformer, we can pinpoint exactly which layers preserve acoustic diversity, and which layers strongly compress the signal.
+
+
+
+---
+class: geometry-slide
+
+## .green[&#x2781; Geometry: Curvature]
+
+.center[How does the representation manifold unfold across layer $\ell$?]
+
+.bold[The Math]
+
+$$ \Large z^{(\ell)}\_n \xrightarrow[\text{Transitions}]{v^{(\ell)}\_n = z^{(\ell)}\_{n+1} - z^{(\ell)}\_n} \{v^{(\ell)}\_n\} \xrightarrow[\text{Angles}]{\theta\_n = \arccos\left(\frac{v\_{n+1}^\top v\_n}{\|v\_{n+1}\| \|v\_n\|}\right)} \{\theta\_n\} \xrightarrow[\text{Curvature}]{\frac{1}{N-1}\sum \theta\_n} C^{(\ell)}(x) $$
+
+???
+Let's move to our second intrinsic metric: Geometry, evaluated through the curvature of token trajectories.
+
+Mathematically, we look at the sequential evolution of tokens. First, we compute the transition vectors between adjacent tokens. Then, we calculate the angles between these successive steps using cosine similarity. Finally, we average these angles to get the overall curvature of the sequence.
+
+Intuitively, this measures how the data manifold unfolds. 
+High curvature means the trajectory is jagged and changes abruptly—which is typical when the model is encoding fast, local acoustic or phonetic details. 
+Low curvature means the path is smooth and more linear, indicating that the model is abstracting those raw details into higher-level, semantically coherent structures.
+
+---
+class: geometry-slide
+count: false
+
+## .green[&#x2781; Geometry: Curvature]
+
+.center[How does the representation manifold unfold across layer $\ell$?]
+
+.bold[The Math]
+
+$$ \Large z^{(\ell)}\_n \xrightarrow[\text{Transitions}]{v^{(\ell)}\_n = z^{(\ell)}\_{n+1} - z^{(\ell)}\_n} \{v^{(\ell)}\_n\} \xrightarrow[\text{Angles}]{\theta\_n = \arccos\left(\frac{v\_{n+1}^\top v\_n}{\|v\_{n+1}\| \|v\_n\|}\right)} \{\theta\_n\} \xrightarrow[\text{Curvature}]{\frac{1}{N-1}\sum \theta\_n} C^{(\ell)}(x) $$
+
+.bold[The Intuition]
+
+This measures the **smoothness of token trajectories** in the latent space.
+
+- 📈 **High Curvature:** Abrupt changes and sharp angles $\Rightarrow$ Captures **local acoustic** or phonetic details.
+- 📉 **Low Curvature:** Smooth, linear trajectories $\Rightarrow$ **Abstraction** of global, semantically coherent structures.
+
+???
+Let's move to our second intrinsic metric: Geometry, evaluated through the curvature of token trajectories.
+
+Mathematically, we look at the sequential evolution of tokens. First, we compute the transition vectors between adjacent tokens. Then, we calculate the angles between these successive steps using cosine similarity. Finally, we average these angles to get the overall curvature of the sequence.
+
+Intuitively, this measures how the data manifold unfolds. 
+High curvature means the trajectory is jagged and changes abruptly—which is typical when the model is encoding fast, local acoustic or phonetic details. 
+Low curvature means the path is smooth and more linear, indicating that the model is abstracting those raw details into higher-level, semantically coherent structures.
+
+
+---
+class: geometry-slide, middle
+
+## .green[&#x2781; Geometry: Illustration]
+
+.center.width-100[![](images/insidessl/toy_high_curvature.png)]
+
+???
+To visualize this, imagine a sequence of just 15 tokens.
+Here, we have a high-curvature trajectory. The path between tokens is jagged, with sharp turns at every step. On the right, you can see that the angles between successive transitions are consistently large. 
+In our speech models, we typically see this in the early layers, where the network is busy capturing complex, rapidly changing acoustic features.
+
+---
+class: geometry-slide, middle
+count: false
+
+## .green[&#x2781; Geometry: Illustration]
+
+.center.width-100[![](images/insidessl/toy_low_curvature.png)]
+
+???
+Now, contrast this with a low-curvature trajectory.
+The transitions here are smooth and highly linear, resulting in much smaller angles between steps. 
+As the representations pass through the deeper layers of a Transformer, we expect the manifold to "unfold" and straighten out like this. This straightening process indicates that the network is organizing the information into a more abstract, linearly separable semantic space.
+
+---
+class: robustness-slide
+
+## .red[&#x2782; Robustness: Invariance to Perturbations]
+
+.center[Are the representations stable under input perturbations at layer $\ell$?]
+
+.bold[The Math]
+
+.small[
+
+$$ \Large x \xrightarrow[\text{Augmentations}]{\text{Noise, Masking}} (x\_A, x\_B) \xrightarrow[\text{Embeddings}]{Z^{(\ell)}} (z^{(\ell)}\_{n, A}, z^{(\ell)}\_{n, B}) \xrightarrow[\text{InfoNCE Loss}]{\text{Contrastive Alignment}} \mathcal{I}^{(\ell)}\_\tau $$
+
+]
+
+
+
+???
+Our third intrinsic metric assesses Robustness, or more specifically, the invariance to input perturbations.
+
+Mathematically, we take an input audio sample and generate two augmented views—for example, by adding noise or masking time steps. We pass both views through the model to extract their token embeddings at a specific layer. We then use an InfoNCE contrastive loss to measure how well the embeddings of the same token from the two different views align, while pushing away the embeddings of other tokens.
+
+Intuitively, this estimates a lower bound on mutual information. 
+A high InfoNCE loss means the network has trouble matching the augmented views—it's brittle, and the representations change drastically when noise is introduced. 
+Conversely, a low InfoNCE loss indicates that the embeddings are closely aligned despite the perturbations, meaning the layer has successfully built an invariant, robust representation of the speech signal.
+
+
+---
+class: robustness-slide
+count: false
+
+## .red[&#x2782; Robustness: Invariance to Perturbations]
+
+.center[Are the representations stable under input perturbations at layer $\ell$?]
+
+.bold[The Math]
+
+.small[
+
+$$ \Large x \xrightarrow[\text{Augmentations}]{\text{Noise, Masking}} (x\_A, x\_B) \xrightarrow[\text{Embeddings}]{Z^{(\ell)}} (z^{(\ell)}\_{n, A}, z^{(\ell)}\_{n, B}) \xrightarrow[\text{InfoNCE Loss}]{\text{Contrastive Alignment}} \mathcal{I}^{(\ell)}\_\tau $$
+
+]
+
+<br>
+
+.bold[The Intuition]
+
+This measures the **mutual information** between two perturbed views of the same speech token.
+
+- 📈 **High InfoNCE Loss:** Embeddings of augmented views are mismatched $\Rightarrow$ The layer is **brittle** and highly sensitive to distortions.
+- 📉 **Low InfoNCE Loss:** Embeddings of augmented views align perfectly $\Rightarrow$ The layer maintains an **invariant**, robust representation.
+
+???
+Our third intrinsic metric assesses Robustness, or more specifically, the invariance to input perturbations.
+
+Mathematically, we take an input audio sample and generate two augmented views—for example, by adding noise or masking time steps. We pass both views through the model to extract their token embeddings at a specific layer. We then use an InfoNCE contrastive loss to measure how well the embeddings of the same token from the two different views align, while pushing away the embeddings of other tokens.
+
+Intuitively, this estimates a lower bound on mutual information. 
+A high InfoNCE loss means the network has trouble matching the augmented views—it's brittle, and the representations change drastically when noise is introduced. 
+Conversely, a low InfoNCE loss indicates that the embeddings are closely aligned despite the perturbations, meaning the layer has successfully built an invariant, robust representation of the speech signal.
+
+
+---
+class: robustness-slide, middle
+
+## .red[&#x2782; Robustness: Illustration]
+
+.center.width-100[![](images/insidessl/toy_brittle.png)]
+
+???
+To visualize this, imagine the original tokens as circles, and the perturbed, noisy versions as triangles.
+
+In a brittle representation, like we often see in the very early or sometimes the final output layers, a small perturbation in the input space causes a huge shift in the latent space. 
+The perturbed tokens end up far away from their clean counterparts, mixing with other tokens. The contrastive loss is high because the model can no longer confidently match the corresponding pairs.
+
+---
+class: robustness-slide, middle
+count: false
+
+## .red[&#x2782; Robustness: Illustration]
+
+.center.width-100[![](images/insidessl/toy_invariant.png)]
+
+???
+Now look at a robust, invariant representation.
+Despite the heavy noise added to the input, the network has processed the signal such that the clean circles and the noisy triangles map to almost the exact same location in the latent space. 
+
+They remain tightly clustered together, separated from other tokens. The InfoNCE loss here is minimized. By measuring this across layers, we can pinpoint the exact depth where an SSL model successfully strips away acoustic noise to focus on the core semantic identity of the sound.
+
+---
+class: middle, center
+
+# Per-Layer Analysis: Results & Discussion
+
+---
+class: middle
+
+##  Layer-wise analysis of SSL models 
+
+.center.width-100[![](images/results/Layer-wise-1.svg)]
+
+.boite-90[**Baseline:** Raw acoustic features (MelSpec) are inherently highly redundant and geometrically flat.]
+
+???
+First, let's look at the baseline: Mel-spectrograms. 
+Because raw acoustic signals are highly redundant, they occupy a flat geometric space with very low entropy. The goal of an SSL model is to extract and organize this information.
+
+---
+class: middle
+count: false
+
+##  Layer-wise analysis of SSL models 
+
+.center.width-100[![](images/results/Layer-wise-2.svg)]
+
+.boite-90[**The Wav2Vec2 Anomaly:** A sharp late-stage regime shift, characterized by extreme compression (entropy collapse) and a drop in robustness.]
+
+???
+If we add Wav2Vec2, we observe a very distinct pattern. While it starts by complexifying the features, it undergoes a sudden "regime shift" in the final layers. 
+Entropy collapses, curvature fluctuates, and the representation suddenly becomes brittle to noise (InfoNCE spikes). This aggressive compression is likely tied to its discrete quantization objective.
+
+---
+class: middle
+count: false
+
+##  Layer-wise analysis of SSL models 
+
+.center.width-100[![](images/results/Layer-wise.svg)]
+
+.boite-90[**General Trend (Complexity $\rightarrow$ Abstraction):** Models initially increase feature complexity, then smoothly unfold the manifold to build stable, robust representations.]
+
+???
+Finally, when we plot the other models like WavLM and HuBERT, a clear general trend emerges: **Complexity to Abstraction**.
+In the early layers, curvature is high as the model extracts complex local features. Then, it progressively "unfolds" the manifold (curvature drops), maintaining high informational diversity (entropy stays high) and building a stable, robust representation against noise.
+
+---
+class: middle
+count: false
+exclude: true
+
+##  Impact of scale and data
+
+.grid[
+
+.caption[
+The impact of training data (WAVLM-PLUS) and model size (WAVLM-LARGE) on SSL audio representations, showing how layer-wise properties (compression, geometry, and robustness) vary across models of different scales.
+]
+
+.center.kol-1-3[
+.center.width-100[![](images/results/size/0_.png)]
+(a) Entropy 
+]
+.center.kol-1-3[
+.center.width-100[![](images/results/size/1_.png)]
+(b) Curvature
+]
+.center.kol-1-3[
+.center.width-100[![](images/results/size/2_.png)]
+(c) InfoNCE
+]
+
+
+
+]
+
+.boite-90[Scaling **model capacity** completely reshapes the internal dynamics, while scaling **training data** leaves the structural trajectory mostly unchanged.]
+
+???
+Now, what happens if we change the scale of the model or the amount of pre-training data? Here, we compare WavLM Base, Base-Plus (which has much more training data), and Large (which has more parameters).
+
+Interestingly, scaling up the dataset—from Base to Base-Plus—barely changes the internal structure. Their trajectories overlap almost perfectly. 
+
+However, increasing model capacity to "Large" fundamentally alters its behavior. 
+For entropy, the Large model begins with strong compression in the very first layer before expanding. 
+Geometrically, it resists the late-stage "straightening" we saw in smaller models, preserving a much richer, curved manifold at the end. 
+Finally, regarding robustness, while Base models achieve optimal discrimination quickly in the middle layers, the Large model delays this invariance until the very last layers.
+
+
+---
+class: middle
+count: false
+exclude: true
+
+##  Impact of scale and data
+
+.grid[
+
+.caption[
+Effect of ASR fine-tuning scale (10 min, 100 h, 960 h) on DATA2VEC representations, illustrating how layer-wise properties
+(compression, geometry, and robustness) evolve after task adaptation.
+]
+
+.center.kol-1-3[
+.center.width-100[![](images/results/asr/0.png)]
+(a) Entropy 
+]
+.center.kol-1-3[
+.center.width-100[![](images/results/asr/1.png)]
+(b) Curvature
+]
+.center.kol-1-3[
+.center.width-100[![](images/results/asr/2.png)]
+(c) InfoNCE
+]
+
+
+]
+
+
+.boite-90[Extensive supervision locks early-stage extraction but forces deeper layers to construct a more complex, task-specialized manifold.]
+
+???
+Next, we look at downstream task adaptation. How does fine-tuning on different amounts of ASR labels—10 minutes, 100 hours, or 960 hours—affect the representations of Data2Vec?
+
+First, look at entropy. It remains remarkably stable across all regimes. This tells us that the informational density is firmly established during pre-training and doesn't care about downstream supervision.
+
+But curvature reveals a fascinating two-phase evolution. Early layers (0 to 8) are completely locked—they are invariant to the amount of fine-tuning data. But from layer 9 onward, the more supervised data you provide, the more the model builds a geometrically complex, highly curved manifold, deviating from its flat pre-trained state. 
+
+Finally, as seen in the InfoNCE plot, extensive fine-tuning actually overrides the original pre-training robustness in the deep layers, deliberately sacrificing some invariance to specialize the embeddings for the speech recognition task.
+
+
+---
+class: middle
+count: false
+
+## Training Dynamics & Geometric Relaxation
+
+.center[How does the representation manifold evolve during the very first training iteration?]
+.center[
+  <iframe src="html/curvature_steps_smooth_colors.html" width="80%" height="400px" style="border:none;" scrolling="no"></iframe>
+]
+
+.boite-90[**The Optimization Journey:** A sharp global surge to encode acoustic complexity, followed by a targeted deep-layer "flattening" to facilitate linear separability.]
+
+???
+To understand how these structures form, we tracked the curvature during the training of a HuBERT model. 
+
+*Note the color gradient: purple is initialization, shifting towards yellow as we reach convergence.*
+
+1. **Initialization (Purple):** At the very beginning, curvature is low and relatively uniform across all layers, sitting around 1.16.
+
+2. **The Surge (Dark Purple to Teal):** As optimization begins, we see a sharp global surge. Curvature rises to roughly 1.42. The model is rapidly encoding intricate acoustic complexity everywhere.
+
+3. **Structural Separation (Green to Yellow):** As training progresses, a clear split emerges. The early layers—up to about 40% depth—maintain this high curvature to keep encoding complex, local features. 
+
+4. **Deep-Layer Relaxation:** In contrast, the deeper layers undergo a progressive relaxation. The curvature systematically drops. The network actively "flattens" its deep representations, a linearization process designed to make the data easily separable for downstream tasks.
+
+
+---
+class: middle
+count: false
+
+## Robustness analysis
+
+.grid[
+.kol-1-2[
+.center.width-100[![](images/results/perturbation/perturbation-wav2vec2.png)]
+.caption[(a) Wav2Vec2]
+]
+.kol-1-2[
+.center.width-95[![](images/results/perturbation/perturbation-wavlm.png)]
+.caption[(b)  WavLM]
+]
+]
+
+.boite-90[**WavLM** builds progressive invariance to spectral noise, whereas **Wav2Vec2** suffers a sharp late-stage sensitivity spike. Both struggle to recover explicitly masked temporal information.]
+
+???
+Here, we break down the robustness metric by looking at specific signal perturbations instead of a global average. Wav2Vec2 is on the left, WavLM on the right.
+
+First, notice that WavLM generally maintains a much lower InfoNCE loss. For distortions like Gaussian Noise (in blue) and Pitch Shift (in orange), WavLM's loss steadily decreases in deeper layers. It actively builds invariance, which makes perfect sense given its denoising pre-training objective.
+
+However, there is one perturbation that defeats both models: Time Masking, the red line. The loss remains high and flat across all layers. It turns out that filtering out added noise is much easier than recovering temporal information that has been completely deleted.
+
+Finally, look at the deep layers of Wav2Vec2 on the left. Once again, we see that distinct anomaly: a sharp rebound in the loss across the final two layers, jumping from 1.0 to 3.0. While its middle layers successfully build robustness, the output layers suddenly become highly sensitive to acoustic variations again, likely driven by the fine-grained requirements of its vector quantization objective.
+
+---
+class: crosslayer-slide
+
+## .blue[&#x2783; Generative Compatibility Matrix]
+
+.center[How well can representations from depth $k$ be interpreted by a decoder trained on depth $\ell$?]
+
+.bold[The Math]
+
+$$ \Large Z^{(k)} \xrightarrow[\text{Cross-layer Inference}]{\text{Decoder } D^{(\ell)} \text{ (trained on } Z^{(\ell)})} \hat{x}^{(k)} \xrightarrow[\text{Performance Metric}]{\mathcal{M}\left(\hat{x}^{(k)}, x\right)} \text{GCM}(\ell, k) $$
+
+???
+Finally, we move from analyzing isolated layers to exploring their inter-dependencies. This is our Cross-layer perspective: the Generative Compatibility Matrix, or GCM.
+
+The mathematical concept relies on a generative reconstruction paradigm. 
+For a given model layer "L", we train a decoder to reconstruct the input speech. Then, during evaluation, we feed this decoder with representations from a different layer, "K". We compute a performance metric—like SpeechBERTScore or L1 loss—and this value becomes the entry (L, K) in our matrix.
+
+Intuitively, this measures functional transferability. 
+If the metric is favorable, it means the representation at layer K is still structurally similar enough to layer L to be interpreted by the exact same decoding function. 
+If the performance degrades, it reveals a representational shift—meaning the network has fundamentally abstracted or pruned the information between these two depths.
+
+
+---
+class: crosslayer-slide
+count: false
+
+## .blue[&#x2783; Generative Compatibility Matrix]
+
+.center[How well can representations from depth $k$ be interpreted by a decoder trained on depth $\ell$?]
+
+.bold[The Math]
+
+$$ \Large Z^{(k)} \xrightarrow[\text{Cross-layer Inference}]{\text{Decoder } D^{(\ell)} \text{ (trained on } Z^{(\ell)})} \hat{x}^{(k)} \xrightarrow[\text{Performance Metric}]{\mathcal{M}\left(\hat{x}^{(k)}, x\right)} \text{GCM}(\ell, k) $$
+
+
+.bold[The Intuition]
+
+This measures the **functional transferability** and structural stability of information across the network hierarchy.
+
+- 📈 **Favorable GCM $(\ell, k)$:** Decoder $D^{(\ell)}$ successfully interprets layer $k$. The phonetic or speaker content remains structurally **stable and compatible** between these depths.
+- 📉 **Degraded GCM $(\ell, k)$:** Performance drops. A **representational shift** has occurred (e.g., deep-layer semantic pruning), breaking the functional alignment.
+
+???
+Finally, we move from analyzing isolated layers to exploring their inter-dependencies. This is our Cross-layer perspective: the Generative Compatibility Matrix, or GCM.
+
+The mathematical concept relies on a generative reconstruction paradigm. 
+For a given model layer "L", we train a decoder to reconstruct the input speech. Then, during evaluation, we feed this decoder with representations from a different layer, "K". We compute a performance metric—like SpeechBERTScore or L1 loss—and this value becomes the entry (L, K) in our matrix.
+
+Intuitively, this measures functional transferability. 
+If the metric is favorable, it means the representation at layer K is still structurally similar enough to layer L to be interpreted by the exact same decoding function. 
+If the performance degrades, it reveals a representational shift—meaning the network has fundamentally abstracted or pruned the information between these two depths.
+
+---
+class: crosslayer-slide, middle
+
+## .blue[&#x2783; GCM: Illustrative Example]
+
+.grid[
+.kol-1-2[
+.center.width-70[![](images/results/gcm_toy_matrix.svg)]
+]
+.kol-1-2[
+.medium[
+**Let's take a decoder trained on Layer 1:** $D^{(1)}$
+
+- **Evaluate on Layer 2:** $\rightarrow$ *Strong Performance (0.85)*
+  Information is preserved. Layer 2 is structurally similar to Layer 1.
+
+<br>
+
+- **Evaluate on Layer 4:** $\rightarrow$ *Degraded Performance (0.15)*
+  Information is pruned or structurally abstracted. $D^{(1)}$ can no longer decode it.
+]
+]
+]
+
+<br>
+.alert-90[.center[By computing this for all $(\ell, k)$ pairs, we map the exact trajectory of how acoustic content is abstracted layer by layer.]]
+
+???
+Let's look at this 4x4 toy example to make it concrete. 
+
+Imagine we train a decoder specifically on the representations of Layer 1. This is the top row, highlighted with the red dashed line.
+    
+If we evaluate this decoder on embeddings from Layer 2, we get a strong compatibility score of 0.85. This means Layer 2 and Layer 1 share a stable functional core. They are essentially "speaking the same structural language."
+
+However, if we take that exact same decoder and feed it representations from Layer 4, the performance crashes down to 0.15. This degradation is highly informative: it tells us that a major representational shift has occurred. The network has pruned or abstracted the raw acoustic details so much that our early-layer decoder can no longer read them.
+
+By computing this matrix for all layers, the GCM gives us a complete topological map of how information flows and transforms throughout the network.
+
+
+---
+class: middle
+count: false
+
+
+## GCM Results: Wav2Vec2
+
+.grid[
+.center.width-80[![](images/results/GCM/gcm.svg)]
+]
+
+
+.boite-90[**Semantic Rupture & Pruning:** A sharp break at layer 11 confirms the entropy collapse. The asymmetric shape reveals strict hierarchical abstraction.]
+
+
+???
+Let's look at the actual GCM heatmaps for Wav2Vec2. We have Phonetic Content on the left, and Speaker Identity on the right. 
+
+There are three major takeaways here:
+
+First, look at the Content matrix on the left. Layers 1 through 10 form a massive, stable block of phonetic encoding. But notice the sharp semantic rupture exactly at layer 11. This visualizes perfectly the sudden "entropy collapse" we observed in our earlier layer-wise analysis.
+
+Second, look at Speaker Identity on the right. The blocks of stability are much less pronounced. This tells us that while phonetic content is highly stable in the middle layers, speaker identity is not preserved across distant layers with the same robustness.
+
+Finally, notice the global shape of both matrices: they are heavily asymmetric, strongly favoring the lower triangular region. 
+This is the visual signature of **hierarchical pruning**. Decoders trained on early, acoustically-rich layers completely fail to understand the deep layers because that raw acoustic information has been stripped away. But deep-layer decoders can still easily look back and interpret earlier layers.
+
+---
+class: middle
+count: false
+
+.center[
+  <iframe src="html/gcm_audio_explorer.html" width="100%" height="600px" style="border:none; border-radius: 20px;" scrolling="no"></iframe>
+]
+
+???
+Now, looking at numbers in a matrix is great, but we are at Interspeech, so let's actually *listen* to what this means.
+
+Here we have an interactive GCM audio explorer. 
+*(Click on the diagonal)* If I click on the diagonal, for example Decoder 3 evaluated on Layer 3, we hear a near-perfect reconstruction of the speech.
+
+*(Click on a nearby off-diagonal cell)* If I evaluate that same Decoder 3 on Layer 4, it still sounds very clear. The representation hasn't changed much.
+
+*(Click on a far off-diagonal cell)* But, if I evaluate Decoder 3 on Layer 11... *(Let it play)*. You hear that? The phonetic content is completely garbled or lost. The model has abstracted the acoustic information into a deep semantic space, and our early-layer decoder no longer understands it.
+
+
+---
+class: middle
+
+## Linking Intrinsic Metrics to Downstream Tasks
+
+.grid[
+.kol-1-2.center[
+**Layer-wise Linear Probing**
+.width-100[![](images/results/probing/task-probing.png)] <!-- Remplacer par Fig 8 / probing curves -->
+]
+.kol-1-2.center[
+**Task vs. Metric Correlation**
+.width-100[![](images/results/probing/task-corr.png)] <!-- Remplacer par Fig 9 / corr matrix -->
+]
+]
+
+- **Phonemes (Linguistic):** Peak in mid-layers. Negatively correlated with entropy and curvature. They benefit from **compression** and **linearization**.
+- **Pitch & Speaker (Paralinguistic):** Peak in early layers. Positively correlated with entropy and curvature. They rely on **feature richness** and a complex manifold.
+
+???
+To bring this all together, we need to connect our intrinsic metrics back to the real world using linear probing. 
+
+If we look at the probing curves on the left, a clear layer-wise hierarchy emerges. 
+Paralinguistic tasks, like Pitch and Speaker identification, peak in the very early layers. As we can see from the correlation matrix on the right, these tasks rely heavily on high entropy and high curvature. They need that raw, complex acoustic manifold before the details get pruned away.
+
+On the other hand, Phoneme classification peaks in the middle layers. Fascinatingly, this peak perfectly coincides with the curvature transition point we analyzed earlier. Phonemes require a geometric "sweet spot"—they need the network to compress the raw variance and flatten out the manifold to make the classes linearly separable, without over-compressing the core semantic signal.
+
+Ultimately, this proves that linguistic and paralinguistic tasks demand fundamentally opposed geometric properties from the latent space.
+
+---
+class: middle, center
+
+# Conclusion
+
+---
+class: middle
+
+## .blue[Conclusion: InsideSSL]
+
+.grid[
+
+### 1. What?
+**A Model-Centric Paradigm**
+.medium[Moving beyond task-dependent probing to evaluate Audio SSL models from the inside out, without relying on external human labels.]
+
+
+### 2. How?
+**Intrinsic Topological Metrics**
+.medium[Mapping the latent space using Compression (Entropy), Geometry (Curvature), Robustness (Invariance), and Cross-layer routing (GCM).]
+
+
+### 3. Why?
+**Explaining Task Performance**
+.medium[Revealing the "Complexity to Abstraction" trajectory and proving that paralinguistic and linguistic tasks require fundamentally opposed geometric properties.]
+
+]
+
+.boite-90.center[**Takeaway:** To truly understand foundation models, we must look at *how* they organize information, not just *what* they can predict.]
+
+???
+To conclude, let's summarize the what, the how, and the why of InsideSSL.
+
+**What did we do?** We proposed a shift in how we analyze Audio SSL architectures. Instead of relying on external, human-annotated labels for task-centric probing, we built a model-centric framework.
+
+**How did we do it?** By analyzing the intrinsic topological properties of the latent space. We measured entropy, tracked manifold curvature, evaluated noise invariance, and mapped structural pruning using the Generative Compatibility Matrix.
+
+**Why does this matter?** Because it finally explains the "why" behind downstream performance. We demonstrated that models follow a strict "Complexity to Abstraction" trajectory. This intrinsic view proves that paralinguistic tasks require the raw, high-curvature manifold of early layers, while linguistic tasks demand the compressed, linearized space of deeper layers. 
+
+Ultimately, to build better foundation models, we need to understand how they natively organize information, not just what they can predict. 
+
+Thank you for your attention, I would be happy to take your questions.
+
+---
+class: middle, center
+
+# Thank you for your attention!
+
+
+---
+class: middle, center, annexe-slide
+
+# Appendix
+
+
+---
+class: middle, annexe-slide
+exclude: false
+
+## Introducing $\issl$: A Paradigm Shift
+
+.center.medium[We propose a fundamental shift in how we analyze SSL representations.]
+
+.grid[
+.kol-1-2[
+.boite-wo-border[
+.center[### Task-Centric <br>.small[(Standard Approach)]]
+<hr>
+.medium[
+- **Data:** Relies on external labels.
+- **Focus:** Downstream performance.
+- **Scope:** Task-specific *(Phonemes, Speaker ID)*.
+- **Result:** Tells us *what* the model can do.
+]
+]
+]
+
+.kol-1-2[
+.center[### Model-Centric <br>.small[($\issl$)]]
+<hr>
+.medium[
+- **Data:** Fully *task-agnostic*.
+- **Focus:** *Intrinsic properties* of embeddings.
+- **Scope:** *Per-layer* & *cross-layer* tools.
+- **Result:** Tells us *how* information is processed.
+]
+]
+]
+
+.center.boite-wo-border[
+$\issl$ explicitly uncovers internal mechanisms—.blue[**compression, geometry, and robustness**]—without relying on external labels.
+]
+
+???
+To address the limitations of current evaluations, we introduce a paradigm shift.
+
+On the left, the standard Task-Centric approach. It requires labeled data, focuses on downstream metrics, and is inherently tied to specific tasks. It effectively tells us *what* the model is capable of doing.
+
+On the right, our proposition: INSIDESSL, a strictly Model-Centric approach. 
+It is fully task-agnostic, meaning it requires zero external labels. Instead of looking at outputs, it evaluates the intrinsic mathematical properties of the embeddings themselves, using both per-layer and cross-layer tools. It tells us *how* the model works inside.
+
+Ultimately, INSIDESSL allows us to uncover the internal mechanisms—specifically compression, geometry, and robustness—purely from the representations themselves.
+
+
+
+---
+class: middle, annexe-slide
+count: false
+exclude: false
+
+##  Impact of scale and data
+
+.grid[
+
+.caption[
+The impact of training data (WAVLM-PLUS) and model size (WAVLM-LARGE) on SSL audio representations, showing how layer-wise properties (compression, geometry, and robustness) vary across models of different scales.
+]
+
+.center.kol-1-3[
+.center.width-100[![](images/results/size/0_.png)]
+(a) Entropy 
+]
+.center.kol-1-3[
+.center.width-100[![](images/results/size/1_.png)]
+(b) Curvature
+]
+.center.kol-1-3[
+.center.width-100[![](images/results/size/2_.png)]
+(c) InfoNCE
+]
+
+
+
+]
+
+.boite-90[Scaling **model capacity** completely reshapes the internal dynamics, while scaling **training data** leaves the structural trajectory mostly unchanged.]
+
+???
+Now, what happens if we change the scale of the model or the amount of pre-training data? Here, we compare WavLM Base, Base-Plus (which has much more training data), and Large (which has more parameters).
+
+Interestingly, scaling up the dataset—from Base to Base-Plus—barely changes the internal structure. Their trajectories overlap almost perfectly. 
+
+However, increasing model capacity to "Large" fundamentally alters its behavior. 
+For entropy, the Large model begins with strong compression in the very first layer before expanding. 
+Geometrically, it resists the late-stage "straightening" we saw in smaller models, preserving a much richer, curved manifold at the end. 
+Finally, regarding robustness, while Base models achieve optimal discrimination quickly in the middle layers, the Large model delays this invariance until the very last layers.
+
+
+---
+class: middle, annexe-slide
+count: false
+
+##  Impact of scale and data
+
+.grid[
+
+.caption[
+Effect of ASR fine-tuning scale (10 min, 100 h, 960 h) on DATA2VEC representations, illustrating how layer-wise properties
+(compression, geometry, and robustness) evolve after task adaptation.
+]
+
+.center.kol-1-3[
+.center.width-100[![](images/results/asr/0.png)]
+(a) Entropy 
+]
+.center.kol-1-3[
+.center.width-100[![](images/results/asr/1.png)]
+(b) Curvature
+]
+.center.kol-1-3[
+.center.width-100[![](images/results/asr/2.png)]
+(c) InfoNCE
+]
+
+
+]
+
+
+.boite-90[Extensive supervision locks early-stage extraction but forces deeper layers to construct a more complex, task-specialized manifold.]
+
+???
+Next, we look at downstream task adaptation. How does fine-tuning on different amounts of ASR labels—10 minutes, 100 hours, or 960 hours—affect the representations of Data2Vec?
+
+First, look at entropy. It remains remarkably stable across all regimes. This tells us that the informational density is firmly established during pre-training and doesn't care about downstream supervision.
+
+But curvature reveals a fascinating two-phase evolution. Early layers (0 to 8) are completely locked—they are invariant to the amount of fine-tuning data. But from layer 9 onward, the more supervised data you provide, the more the model builds a geometrically complex, highly curved manifold, deviating from its flat pre-trained state. 
+
+Finally, as seen in the InfoNCE plot, extensive fine-tuning actually overrides the original pre-training robustness in the deep layers, deliberately sacrificing some invariance to specialize the embeddings for the speech recognition task.
+
+
+
+
+</textarea>
+
+
+<script src="./assets/remark-latest.min.js"></script>
+<script src="./assets/auto-render.min.js"></script>
+<script src="./assets/katex.min.js"></script>
+<script type="text/javascript">
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var options = {
+        sourceUrl: getParameterByName("p"),
+        highlightLanguage: "python",
+        // highlightStyle: "tomorrow",
+        // highlightStyle: "default",
+        highlightStyle: "github",
+        // highlightStyle: "googlecode",
+        // highlightStyle: "zenburn",
+        highlightSpans: true,
+        highlightLines: true,
+        ratio: "16:9"
+    };
+
+    var renderMath = function () {
+        renderMathInElement(document.body, {
+            delimiters: [ // mind the order of delimiters(!?)
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "\\(", right: "\\)", display: false},
+            ]
+        });
+    }
+    var slideshow = remark.create(options, renderMath);
+
+</script>
+
+<script>
+				function updateValue(value) {
+				// Mettre à jour l'affichage de la valeur du slider
+				document.getElementById('sliderValue').textContent = value;
+
+				selectedExample = document.getElementById('exampleSelect_pitch').value;
+				v = String(value);
+				audioElement = document.getElementById('audio-pitch');
+            	audioElement.src = "images/pitch/Example-" + selectedExample + "/" + v + ".wav";
+
+            	// Jouer l'audio automatiquement après avoir changé la source
+            	audioElement.play();
+
+				// Ici, vous pouvez ajouter toute autre logique que vous souhaitez exécuter lors du changement de la valeur du slider
+				console.log("Slider value changed to: " + value);
+			}
+
+			function applyChanges_pitch() {
+				selectedExample = document.getElementById('exampleSelect_pitch').value;
+				console.log("Examples: " + selectedExample);
+
+				v = document.getElementById('mySlider').value
+				document.getElementById('audio-pitch').src="images/pitch/Example-"+selectedExample+"/"+v+".wav"
+			}
+
+			// Add event listeners to the select elements
+			document.getElementById('exampleSelect_pitch').addEventListener('change', applyChanges_pitch);
+</script>
+
+
+</body>
+</html>

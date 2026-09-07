@@ -1,0 +1,2397 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="217.11156mm"
+   height="254.46164mm"
+   viewBox="0 0 217.11156 254.46163"
+   version="1.1"
+   id="svg95896"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="insidessl-4.svg"
+   inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview95898"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="480.61164"
+     inkscape:cy="416.53009"
+     inkscape:window-width="2048"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs95893">
+    <marker
+       style="overflow:visible"
+       id="marker138691"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="EmptyTriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,-4.8,0)"
+         style="fill:context-fill;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path35196" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotM"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotM"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path46550" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3160"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2844" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3151"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path2732" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path2726" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2841" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient50308">
+      <stop
+         style="stop-color:#ffccaa;stop-opacity:1;"
+         offset="0"
+         id="stop50304" />
+      <stop
+         style="stop-color:#ffccaa;stop-opacity:0;"
+         offset="1"
+         id="stop50306" />
+    </linearGradient>
+    <marker
+       style="overflow:visible"
+       id="marker23076"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Tail"
+       inkscape:isstock="true">
+      <g
+         transform="scale(-1.2)"
+         id="g23074">
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -3.8048674,-3.9585227 0.54352094,0"
+           id="path23062" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -1.2866832,-3.9585227 3.0617053,0"
+           id="path23064" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M 1.3053582,-3.9585227 5.6537466,0"
+           id="path23066" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -3.8048674,4.1775838 0.54352094,0.21974226"
+           id="path23068" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -1.2866832,4.1775838 3.0617053,0.21974226"
+           id="path23070" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M 1.3053582,4.1775838 5.6537466,0.21974226"
+           id="path23072" />
+      </g>
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker23036"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Tail"
+       inkscape:isstock="true">
+      <g
+         transform="scale(-1.2)"
+         id="g23034">
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -3.8048674,-3.9585227 0.54352094,0"
+           id="path23022" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -1.2866832,-3.9585227 3.0617053,0"
+           id="path23024" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M 1.3053582,-3.9585227 5.6537466,0"
+           id="path23026" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -3.8048674,4.1775838 0.54352094,0.21974226"
+           id="path23028" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -1.2866832,4.1775838 3.0617053,0.21974226"
+           id="path23030" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M 1.3053582,4.1775838 5.6537466,0.21974226"
+           id="path23032" />
+      </g>
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Tail"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Tail"
+       inkscape:isstock="true">
+      <g
+         transform="scale(-1.2)"
+         id="g2212">
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -3.8048674,-3.9585227 0.54352094,0"
+           id="path2200" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -1.2866832,-3.9585227 3.0617053,0"
+           id="path2202" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M 1.3053582,-3.9585227 5.6537466,0"
+           id="path2204" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -3.8048674,4.1775838 0.54352094,0.21974226"
+           id="path2206" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M -1.2866832,4.1775838 3.0617053,0.21974226"
+           id="path2208" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.8;stroke-linecap:round"
+           d="M 1.3053582,4.1775838 5.6537466,0.21974226"
+           id="path2210" />
+      </g>
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker22928"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path22926" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Send"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path2197" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleOutM"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path102454" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="EmptyTriangleOutL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="EmptyTriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,-4.8,0)"
+         style="fill:context-fill;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path102469" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path102330" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient50302"
+       x1="18.218349"
+       y1="173.67657"
+       x2="150.41318"
+       y2="173.56989"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient50530"
+       gradientUnits="userSpaceOnUse"
+       x1="18.218349"
+       y1="173.67657"
+       x2="85.186836"
+       y2="174.72197" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient51064"
+       gradientUnits="userSpaceOnUse"
+       x1="18.218349"
+       y1="173.67657"
+       x2="150.41318"
+       y2="173.56989" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient51066"
+       gradientUnits="userSpaceOnUse"
+       x1="18.218349"
+       y1="173.67657"
+       x2="150.41318"
+       y2="173.56989" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient51068"
+       gradientUnits="userSpaceOnUse"
+       x1="18.218349"
+       y1="173.67657"
+       x2="150.41318"
+       y2="173.56989" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient51070"
+       gradientUnits="userSpaceOnUse"
+       x1="18.218349"
+       y1="173.67657"
+       x2="150.41318"
+       y2="173.56989" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient51072"
+       gradientUnits="userSpaceOnUse"
+       x1="18.218349"
+       y1="173.67657"
+       x2="150.41318"
+       y2="173.56989" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient51074"
+       gradientUnits="userSpaceOnUse"
+       x1="18.218349"
+       y1="173.67657"
+       x2="150.41318"
+       y2="173.56989" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient50308"
+       id="linearGradient51076"
+       gradientUnits="userSpaceOnUse"
+       x1="18.218349"
+       y1="173.67657"
+       x2="115.24892"
+       y2="173.26044" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(4.8218437,2.5670563)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.918233"
+       id="rect179595"
+       width="253.76164"
+       height="216.41156"
+       x="-251.54459"
+       y="-4.4718437"
+       ry="9.5382767"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#3771c8;fill-opacity:0.0347268;stroke:#5777a8;stroke-width:0.555286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="rect113280"
+       width="77.976501"
+       height="48.029598"
+       x="123.6813"
+       y="168.22845"
+       ry="4.0433402"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#ffffd0;fill-opacity:1;stroke:#000000;stroke-width:0.502143;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect22998"
+       width="70.349548"
+       height="10.911479"
+       x="124.67398"
+       y="230.65257"
+       ry="2.2221479"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0.589198;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103077"
+       width="217.24905"
+       height="99.547562"
+       x="-217.67749"
+       y="3.1361935"
+       ry="8.3803473"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 42.637318,229.47396 c 0.287387,0.10617 0.307435,0.54932 0.307435,6.79573 v 6.68217 l -0.452835,0.13085 c -0.322083,0.0931 -0.537675,0.0969 -0.746632,0.0133 -0.268424,-0.10737 -0.297703,-0.69273 -0.339101,-6.77822 -0.03288,-4.82684 0.0093,-6.70249 0.153263,-6.81246 0.233311,-0.17829 0.64757,-0.19037 1.07787,-0.0314 z m 15.315332,1.05754 c 0.243586,0.1545 0.27607,0.82867 0.27607,5.73026 0,4.9016 -0.03247,5.57578 -0.27607,5.73028 -0.381633,0.24204 -1.078805,0.22034 -1.298854,-0.0405 -0.250104,-0.29639 -0.250104,-11.08328 0,-11.37967 0.220049,-0.26078 0.917221,-0.28247 1.298854,-0.0405 z m 4.281518,0.73857 c 0.303262,0.19234 0.303262,9.79105 0,9.98339 -0.270978,0.17188 -0.888485,0.17188 -1.159472,0 -0.303261,-0.19234 -0.303261,-9.79105 0,-9.98339 0.115955,-0.0735 0.376826,-0.13371 0.57974,-0.13371 0.202906,0 0.463794,0.0602 0.579732,0.13371 z m -8.688138,0.0701 c 0.260938,0.18287 0.290742,0.68931 0.290742,4.941 0,4.44785 -0.0197,4.7485 -0.321264,4.92164 -0.419909,0.24102 -0.656784,0.23262 -1.084155,-0.0384 -0.340202,-0.21577 -0.351361,-0.3714 -0.351361,-4.90255 0,-4.53116 0.01118,-4.68679 0.351361,-4.90256 0.436201,-0.27666 0.73973,-0.28186 1.114677,-0.019 z m -8.746319,0.0658 c 0.328233,0.15221 0.34102,0.33422 0.34102,4.85582 0,4.52158 -0.01285,4.7036 -0.34102,4.85583 -0.440116,0.20414 -0.710176,0.19979 -1.051855,-0.0169 -0.242176,-0.15359 -0.27607,-0.74763 -0.27607,-4.83889 0,-4.09125 0.03389,-4.68528 0.27607,-4.83888 0.341662,-0.21671 0.611731,-0.22106 1.051855,-0.0169 z m -10.753906,0.37989 c 0.259944,0.18217 0.290742,0.65833 0.290742,4.49531 0,4.01608 -0.02061,4.30339 -0.321273,4.47595 -0.403466,0.23159 -0.803912,0.2348 -1.159446,0.009 -0.241483,-0.15317 -0.276061,-0.71725 -0.276061,-4.50463 0,-3.78738 0.03455,-4.35146 0.276061,-4.50463 0.366801,-0.23264 0.833149,-0.22141 1.189977,0.0287 z m -4.391947,0.11142 c 0.25966,0.18198 0.290742,0.6506 0.290742,4.38389 0,3.90814 -0.02095,4.19212 -0.321265,4.36453 -0.419909,0.24102 -0.656776,0.23261 -1.084155,-0.0384 -0.338691,-0.21481 -0.351352,-0.37141 -0.351352,-4.34544 0,-3.97406 0.01269,-4.13064 0.351352,-4.34546 0.43621,-0.27666 0.73973,-0.28185 1.114678,-0.019 z m 21.892924,0.12318 c 0.115738,0.13715 0.181857,1.67932 0.181857,4.24134 0,2.56204 -0.0661,4.1042 -0.181857,4.24136 -0.206111,0.24427 -1.030054,0.29368 -1.364105,0.0818 -0.302544,-0.19189 -0.302544,-8.45446 0,-8.64634 0.334051,-0.21187 1.157994,-0.16245 1.364105,0.0818 z m 21.579406,0.36387 c 0.301917,0.19149 0.301917,7.56347 0,7.75495 -0.115947,0.0735 -0.376826,0.13371 -0.579732,0.13371 -0.775702,0 -0.79055,-0.0754 -0.79055,-4.01119 0,-3.93582 0.01486,-4.01118 0.79055,-4.01118 0.202906,0 0.463785,0.0602 0.579732,0.13371 z m 4.326687,0.70992 c 0.414651,0.26298 0.414651,6.07213 0,6.33512 -0.38972,0.24718 -0.887149,0.21729 -1.207229,-0.0726 -0.230198,-0.20844 -0.273482,-0.69824 -0.273482,-3.09502 0,-2.39676 0.04332,-2.88657 0.273482,-3.09501 0.32008,-0.28984 0.817509,-0.31972 1.207229,-0.0725 z m -36.892317,0.44568 c 0.234864,0.14897 0.27607,0.55518 0.27607,2.72187 0,2.71048 -0.05659,2.89698 -0.878395,2.89698 -0.82184,0 -0.878394,-0.1865 -0.878394,-2.89698 0,-2.71046 0.05659,-2.89696 0.878394,-2.89696 0.179437,0 0.45049,0.0788 0.602325,0.17509 z m 19.598086,0.37902 c 0.117523,0.13928 0.168077,1.0469 0.137947,2.47654 l -0.04757,2.25669 -0.501511,0.11177 c -0.431543,0.0962 -0.54794,0.0754 -0.834468,-0.14902 -0.300265,-0.23518 -0.332966,-0.4651 -0.332966,-2.34068 0,-1.70211 0.04966,-2.12485 0.273474,-2.3275 0.341421,-0.30916 1.05486,-0.32435 1.305098,-0.0278 z m -11.021245,-0.0995 c 0.277329,0.10245 0.307434,0.34239 0.307434,2.45028 v 2.33671 l -0.416979,0.1205 c -0.302669,0.0875 -0.519363,0.0857 -0.79055,-0.006 -0.362712,-0.12312 -0.373571,-0.19461 -0.373571,-2.45883 0,-2.19156 0.02045,-2.33896 0.339802,-2.44736 0.415185,-0.14093 0.540638,-0.14025 0.933864,0.005 z m 6.700867,0.61301 c 0.05859,0.0969 0.10664,0.97343 0.10664,1.94776 v 1.77152 l -0.46639,0.0742 c -0.945356,0.15049 -1.022342,0.0141 -1.075349,-1.90553 -0.03314,-1.20001 0.01544,-1.80467 0.153262,-1.91004 0.277138,-0.21179 1.149431,-0.19678 1.281837,0.0221 z m 19.509063,0.40565 c 0.205586,0.18616 0.273482,0.53961 0.273482,1.42369 0,1.24789 -0.218171,1.67133 -0.861117,1.67133 -0.718605,0 -0.895663,-0.3342 -0.895663,-1.69068 0,-1.1016 0.04549,-1.30926 0.321273,-1.46756 0.440307,-0.25273 0.83693,-0.23115 1.162025,0.0632 z m -4.508903,-0.0742 c 0.366234,0.1627 0.390447,0.25556 0.390447,1.49787 0,1.24232 -0.02421,1.33519 -0.390447,1.49788 -0.50247,0.22322 -0.592034,0.21886 -1.014981,-0.0494 -0.308762,-0.19583 -0.351353,-0.3714 -0.351353,-1.44848 0,-1.07707 0.04257,-1.25265 0.351353,-1.44848 0.422947,-0.26825 0.512511,-0.27261 1.014981,-0.0494 z m -6.400376,0.0303 c 0.235114,0.16477 0.290742,0.44929 0.290742,1.48693 0,1.1016 -0.04549,1.30925 -0.321265,1.46756 -0.403475,0.23159 -0.803912,0.23481 -1.159446,0.009 -0.402758,-0.25544 -0.402758,-2.73702 0,-2.99247 0.366802,-0.23264 0.833149,-0.2214 1.189969,0.0287 z m -32.596127,-0.07 c 0.292086,0.18525 0.292086,2.88999 0,3.07524 -0.115946,0.0735 -0.376825,0.13371 -0.579731,0.13371 -0.697081,0 -0.790559,-0.19761 -0.790559,-1.67133 0,-1.47372 0.09348,-1.67132 0.790559,-1.67132 0.202906,0 0.463785,0.0602 0.579731,0.1337 z m 6.403448,0.0981 c 0.265578,0.0981 0.307435,0.29434 0.307435,1.44118 0,1.19852 -0.03297,1.33881 -0.339802,1.44294 -0.461657,0.1567 -0.641502,0.14557 -0.965229,-0.0598 -0.400788,-0.2542 -0.400788,-2.51543 0,-2.76963 0.317609,-0.20143 0.563924,-0.21495 0.997596,-0.0547 z m -10.682378,0.12729 c 0.201195,0.18218 0.273474,0.52903 0.273474,1.31227 0,1.13192 -0.236258,1.5599 -0.861118,1.5599 -0.702414,0 -0.895655,-0.34072 -0.895655,-1.57926 0,-0.99366 0.04883,-1.19977 0.321265,-1.35615 0.440315,-0.25272 0.836938,-0.23114 1.162034,0.0632 z m 51.902559,0.0456 c 0.335654,0.14911 0.371526,0.27143 0.371526,1.26664 0,0.99519 -0.03589,1.11751 -0.371526,1.26662 -0.376675,0.16733 -0.84006,0.12916 -1.075124,-0.0886 -0.168127,-0.15573 -0.168127,-2.20039 0,-2.35612 0.235064,-0.21772 0.698449,-0.2559 1.075124,-0.0886 z m -32.519299,0.32586 c 0.339209,0.15069 0.390447,0.27415 0.390447,0.94076 0,0.66662 -0.05125,0.79008 -0.390447,0.94077 -0.50247,0.22322 -0.592034,0.21886 -1.014981,-0.0494 -0.273273,-0.17332 -0.351352,-0.3714 -0.351352,-0.89137 0,-0.51997 0.07804,-0.71805 0.351352,-0.89137 0.422947,-0.26825 0.512511,-0.27262 1.014981,-0.0494 z m -21.788863,-0.051 c 0.360651,0.085 0.395037,0.16426 0.392584,0.90459 -0.0017,0.44627 -0.06076,0.86519 -0.131763,0.93095 -0.205076,0.18995 -0.623483,0.24883 -1.051371,0.14795 -0.360659,-0.085 -0.395045,-0.16426 -0.392592,-0.90459 0.0017,-0.44627 0.06076,-0.8652 0.131763,-0.93095 0.205076,-0.18995 0.623491,-0.24883 1.051379,-0.14795 z m 43.689867,0.23658 c 0.150417,0.1362 0.273482,0.47602 0.273482,0.75516 0,0.27915 -0.123065,0.61897 -0.273482,0.75516 -0.297519,0.26941 -0.93706,0.32667 -1.272488,0.11393 -0.277664,-0.1761 -0.277664,-1.56207 0,-1.73818 0.335428,-0.21273 0.974969,-0.15547 1.272488,0.11393 z m -32.613395,-0.11388 c 0.277672,0.17611 0.277672,1.56207 0,1.73818 -0.33542,0.21273 -0.974961,0.15547 -1.27248,-0.11393 -0.150408,-0.1362 -0.273482,-0.47602 -0.273482,-0.75517 0,-0.27913 0.123074,-0.61895 0.273482,-0.75515 0.297519,-0.26941 0.93706,-0.32667 1.27248,-0.11393 z m 30.212625,0.26259 c 0.571819,0.25403 0.549885,0.98079 -0.03697,1.22467 -0.49667,0.2064 -1.138197,0.0646 -1.175872,-0.25997 -0.06418,-0.55226 0.03414,-0.86812 0.309655,-0.99591 0.388343,-0.1801 0.430826,-0.17863 0.903183,0.0312 z"
+       id="path96063"
+       sodipodi:nodetypes="sscssscscssssccsssssscscsssccssssssssssssssscscsssccsssssscsssscsssssssssssssscsssssscscssssccsscsscsssssssssssssssssssssssscsssscsscsssssssssssssssssssssssssscsscsssssssssssssssscsss"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0.589198;stroke:#000000;stroke-width:0.399628;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235"
+       id="rect96185"
+       width="60.028111"
+       height="87.74147"
+       x="-212.07919"
+       y="10.18592"
+       ry="7.6553254"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.60576px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.495433"
+       x="-205.69218"
+       y="9.2172861"
+       id="text98723"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/rect4218.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan98721"
+         style="stroke-width:0.495433"
+         x="-205.69218"
+         y="9.2172861" /></text>
+    <g
+       id="g224"
+       transform="matrix(0.44975307,0,0,0.44975307,-43.016031,114.11968)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       style="fill:#ffccaa;fill-opacity:0.334398">
+      <path
+         d="M 213.42999,195.33 H 135 c -6.66667,0 -9.44334,-3.28667 -8.33,-9.86 l 7.52,-44.44 c 1.11333,-6.57334 5.00333,-9.86 11.67,-9.86 H 281 c 6.66666,0 10.55667,3.28666 11.67001,9.86 l 7.51999,44.44 c 1.11331,6.57333 -1.66336,9.86 -8.33001,9.86 z"
+         style="fill:#ffccaa;fill-opacity:0.334398;fill-rule:nonzero;stroke:none"
+         id="path226" />
+      <path
+         d="M 213.42999,195.33 H 135 c -6.66667,0 -9.44334,-3.28667 -8.33,-9.86 l 7.52,-44.44 c 1.11333,-6.57334 5.00333,-9.86 11.67,-9.86 H 281 c 6.66666,0 10.55667,3.28666 11.67001,9.86 l 7.51999,44.44 c 1.11331,6.57333 -1.66336,9.86 -8.33001,9.86 z"
+         style="fill:#ffccaa;fill-opacity:0.334398;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0.8"
+         id="path228" />
+    </g>
+    <rect
+       style="fill:#003380;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102617"
+       width="7.4342728"
+       height="7.9242034"
+       x="-170.47943"
+       y="20.916027"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#003380;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102735"
+       width="7.4342728"
+       height="7.9242034"
+       x="-170.47943"
+       y="28.840231"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#003380;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102737"
+       width="7.4342728"
+       height="7.9242034"
+       x="-170.47943"
+       y="36.764435"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#003380;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102739"
+       width="7.4342728"
+       height="7.9242034"
+       x="-170.47943"
+       y="44.688637"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#003380;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102741"
+       width="7.4342728"
+       height="7.9242034"
+       x="-170.47943"
+       y="52.612839"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#003380;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102743"
+       width="7.4342728"
+       height="7.9242034"
+       x="-170.47943"
+       y="60.537041"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#003380;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102745"
+       width="7.4342728"
+       height="7.9242034"
+       x="-170.47943"
+       y="68.461243"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#003380;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102747"
+       width="7.4342728"
+       height="7.9242034"
+       x="-170.47943"
+       y="76.385445"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.36095px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.477072"
+       x="18.068525"
+       y="8.4734402"
+       id="text103081"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;stroke-width:0.477072"
+         x="18.068525"
+         y="8.4734402"
+         id="tspan119705">Audio SSL</tspan></text>
+    <rect
+       style="fill:#e8a164;fill-opacity:0.1;stroke:#e06800;stroke-width:0.555286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235"
+       id="rect115173"
+       width="77.44162"
+       height="48.029583"
+       x="123.6813"
+       y="1.9960854"
+       ry="4.0433393"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.793749, 0.793749;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 168.38594,33.404151 26.88541,7.588086"
+       id="path227032"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#64bc64;fill-opacity:0.1;stroke:#009600;stroke-width:0.555;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235;opacity:1"
+       id="rect115173-9"
+       width="78.018555"
+       height="48.029587"
+       x="123.68115"
+       y="53.884434"
+       ry="4.0433397"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#d40000;fill-opacity:0.1;stroke:#ff0000;stroke-width:0.555;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235;opacity:1"
+       id="rect121050"
+       width="77.976501"
+       height="48.029594"
+       x="123.68115"
+       y="107.05882"
+       ry="4.0433402"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0.589198;stroke:#000000;stroke-width:0.411447;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235"
+       id="rect96369"
+       width="129.55933"
+       height="87.514168"
+       x="-147.18274"
+       y="10.288799"
+       ry="7.3673229"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#c8b7be;fill-opacity:0.589198;stroke:#000000;stroke-width:0.211426;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235"
+       id="rect101609"
+       width="14.463"
+       height="70.252716"
+       x="-139.20995"
+       y="16.85622"
+       ry="3.4059596"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#dcd2d6;fill-opacity:1;stroke:#000000;stroke-width:0.211426;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235"
+       id="rect101631"
+       width="14.463318"
+       height="70.252716"
+       x="-112.91441"
+       y="16.85622"
+       ry="4.2090597"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#dcd2d6;fill-opacity:1;stroke:#000000;stroke-width:0.211426;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235"
+       id="rect102593"
+       width="14.463318"
+       height="70.252716"
+       x="-87.769585"
+       y="16.85622"
+       ry="3.8792369"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#0055d4;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102829"
+       width="7.4342728"
+       height="7.9242034"
+       x="-122.71825"
+       y="20.916027"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#0055d4;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102831"
+       width="7.4342728"
+       height="7.9242034"
+       x="-122.71825"
+       y="28.840231"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#0055d4;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102833"
+       width="7.4342728"
+       height="7.9242034"
+       x="-122.71825"
+       y="36.764435"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#0055d4;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102835"
+       width="7.4342728"
+       height="7.9242034"
+       x="-122.71825"
+       y="44.688637"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#0055d4;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102837"
+       width="7.4342728"
+       height="7.9242034"
+       x="-122.71825"
+       y="52.612839"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#0055d4;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102839"
+       width="7.4342728"
+       height="7.9242034"
+       x="-122.71825"
+       y="60.537041"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#0055d4;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102841"
+       width="7.4342728"
+       height="7.9242034"
+       x="-122.71825"
+       y="68.461243"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#0055d4;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102843"
+       width="7.4342728"
+       height="7.9242034"
+       x="-122.71825"
+       y="76.385445"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#2a7fff;fill-opacity:0.589198;stroke:#f9ffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102899"
+       width="7.4342728"
+       height="7.9242034"
+       x="-96.946556"
+       y="20.916027"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#2a7fff;fill-opacity:0.589198;stroke:#f9ffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102901"
+       width="7.4342728"
+       height="7.9242034"
+       x="-96.946556"
+       y="28.840231"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#2a7fff;fill-opacity:0.589198;stroke:#f9ffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102903"
+       width="7.4342728"
+       height="7.9242034"
+       x="-96.946556"
+       y="36.764435"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#2a7fff;fill-opacity:0.589198;stroke:#f9ffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102905"
+       width="7.4342728"
+       height="7.9242034"
+       x="-96.946556"
+       y="44.688637"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#2a7fff;fill-opacity:0.589198;stroke:#f9ffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102907"
+       width="7.4342728"
+       height="7.9242034"
+       x="-96.946556"
+       y="52.612839"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#2a7fff;fill-opacity:0.589198;stroke:#f9ffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102909"
+       width="7.4342728"
+       height="7.9242034"
+       x="-96.946556"
+       y="60.537041"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#2a7fff;fill-opacity:0.589198;stroke:#f9ffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102911"
+       width="7.4342728"
+       height="7.9242034"
+       x="-96.946556"
+       y="68.461243"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#2a7fff;fill-opacity:0.589198;stroke:#f9ffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102913"
+       width="7.4342728"
+       height="7.9242034"
+       x="-96.946556"
+       y="76.385445"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#80b3ff;fill-opacity:0.589198;stroke:#faffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102951"
+       width="7.4342728"
+       height="7.9242034"
+       x="-70.864052"
+       y="20.916027"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#80b3ff;fill-opacity:0.589198;stroke:#faffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102953"
+       width="7.4342728"
+       height="7.9242034"
+       x="-70.864052"
+       y="28.840231"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#80b3ff;fill-opacity:0.589198;stroke:#faffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102955"
+       width="7.4342728"
+       height="7.9242034"
+       x="-70.864052"
+       y="36.764435"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#80b3ff;fill-opacity:0.589198;stroke:#faffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102957"
+       width="7.4342728"
+       height="7.9242034"
+       x="-70.864052"
+       y="44.688637"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#80b3ff;fill-opacity:0.589198;stroke:#faffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102959"
+       width="7.4342728"
+       height="7.9242034"
+       x="-70.864052"
+       y="52.612839"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#80b3ff;fill-opacity:0.589198;stroke:#faffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102961"
+       width="7.4342728"
+       height="7.9242034"
+       x="-70.864052"
+       y="60.537041"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#80b3ff;fill-opacity:0.589198;stroke:#faffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102963"
+       width="7.4342728"
+       height="7.9242034"
+       x="-70.864052"
+       y="68.461243"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#80b3ff;fill-opacity:0.589198;stroke:#faffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect102965"
+       width="7.4342728"
+       height="7.9242034"
+       x="-70.864052"
+       y="76.385445"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#dcd2d6;fill-opacity:1;stroke:#000000;stroke-width:0.211426;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.588235"
+       id="rect103021"
+       width="14.463"
+       height="70.252716"
+       x="-52.247791"
+       y="16.85622"
+       ry="4.2065344"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#bde5ff;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103023"
+       width="7.4342728"
+       height="7.9242034"
+       x="-35.039783"
+       y="20.916027"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#bde5ff;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103025"
+       width="7.4342728"
+       height="7.9242034"
+       x="-35.039783"
+       y="28.840231"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#bde5ff;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103027"
+       width="7.4342728"
+       height="7.9242034"
+       x="-35.039783"
+       y="36.764435"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#bde5ff;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103029"
+       width="7.4342728"
+       height="7.9242034"
+       x="-35.039783"
+       y="44.688637"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#bde5ff;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103031"
+       width="7.4342728"
+       height="7.9242034"
+       x="-35.039783"
+       y="52.612839"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#bde5ff;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103033"
+       width="7.4342728"
+       height="7.9242034"
+       x="-35.039783"
+       y="60.537041"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#bde5ff;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103035"
+       width="7.4342728"
+       height="7.9242034"
+       x="-35.039783"
+       y="68.461243"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#bde5ff;fill-opacity:0.589198;stroke:#ffffff;stroke-width:0.645116;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect103037"
+       width="7.4342728"
+       height="7.9242034"
+       x="-35.039783"
+       y="76.385445"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 93.234472,119.42904 V 67.365978"
+       id="path15460"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#7aaffc;fill-opacity:1;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse152118"
+       cx="93.291946"
+       cy="93.196907"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 93.234472,67.365978 V 31.620883"
+       id="path15542"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.695, 1.695;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 94.292806,68.346475 V 31.320557"
+       id="path15719"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#afcefc;fill-opacity:1;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse154969"
+       cx="93.291946"
+       cy="67.518166"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#d1e9f8;fill-opacity:1;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse158288"
+       cx="93.428459"
+       cy="32.163296"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.568856;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 51.28137,53.003988 v 9.091733"
+       id="path9583"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.569;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.569, 3.414;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 52.728438,53.003988 v 9.203167"
+       id="path25629"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="41.70797"
+       y="133.3911"
+       id="text343371"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan343369"
+         style="stroke-width:0.407483"
+         x="41.70797"
+         y="133.3911">Layer-1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="41.70797"
+       y="106.90477"
+       id="text343745"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan343743"
+         style="stroke-width:0.407483"
+         x="41.70797"
+         y="106.90477">Layer-2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="41.70797"
+       y="82.306175"
+       id="text343959"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan343957"
+         style="stroke-width:0.407483"
+         x="41.70797"
+         y="82.306175">Layer-3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="41.70797"
+       y="46.357922"
+       id="text344065"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan344063"
+         style="stroke-width:0.407483"
+         x="41.70797"
+         y="46.357922">Layer-L</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="16.326166"
+       y="23.116774"
+       id="text375791"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan375789"
+         style="stroke-width:0.407483"
+         x="16.326166"
+         y="23.116774">Transformer</tspan></text>
+    <path
+       style="fill:#b3b3b3;stroke:#000000;stroke-width:0.606693;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 93.234472,166.03247 V 119.42904"
+       id="path178230"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#6295e2;fill-opacity:1;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path148317"
+       cx="93.291946"
+       cy="119.19917"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 140.52946,26.87091 c 0,0 8.94207,4.888885 13.51694,6.18055 4.57487,1.291665 9.01355,0.791606 13.55869,1.655408 4.54514,0.863802 13.64677,3.54467 13.64677,3.54467 l 13.52922,4.191759"
+       id="path161609"
+       sodipodi:nodetypes="czzcc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 130.20448,21.537269 10.32498,5.33364"
+       id="path179072"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#6295e2;fill-opacity:1;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse161139"
+       cx="141.40395"
+       cy="27.642097"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#79acf8;fill-opacity:1;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse161141"
+       cx="154.00272"
+       cy="32.730354"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#b0cffc;fill-opacity:0.996078;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse161145"
+       cx="168.1136"
+       cy="34.781868"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#d1e9f8;fill-opacity:1;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse161147"
+       cx="194.64183"
+       cy="42.446083"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 138.8688,85.556922 c 0,0 5.94036,-16.294335 13.70303,-15.641385 7.76267,0.65295 5.64169,18.704495 13.59689,22.097425 4.30339,1.83541 8.92258,-3.18567 13.71845,-2.96566 4.79587,0.22001 14.09028,4.4296 14.09028,4.4296"
+       id="path161243"
+       sodipodi:nodetypes="czazc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 131.14602,96.876672 7.72278,-11.31975"
+       id="path178531"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#6295e2;fill-opacity:1;stroke:#fffff6;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse161139-1"
+       cx="139.50931"
+       cy="84.02655"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#7aaefa;fill-opacity:0.996078;stroke:#fffff6;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse161141-1"
+       cx="152.517"
+       cy="70.101837"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1;opacity:1"
+       d="m 166.09401,92.229852 c 0.0491,0.0473 9.16566,-3.398 11.59703,-4.93162 2.43138,-1.53362 16.85556,5.48685 16.85556,5.48685"
+       id="path226339"
+       sodipodi:nodetypes="czc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#aecdfa;fill-opacity:0.996078;stroke:#fffff6;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse161143-5"
+       cx="166.22025"
+       cy="91.991951"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#d1e9f8;fill-opacity:1;stroke:#fffff6;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse161147-8"
+       cx="193.62669"
+       cy="93.302681"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 140.69993,139.89512 c 0,0 9.09969,-4.75791 13.76497,-6.00245 4.66528,-1.24454 9.17012,-0.96273 13.86915,-1.53437 4.69903,-0.57164 9.80114,-0.52698 14.32274,-1.9006 4.5216,-1.37362 12.47281,-6.14762 12.47281,-6.14762"
+       id="path162063"
+       sodipodi:nodetypes="czzzc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 131.82196,143.69875 8.87797,-3.80363"
+       id="path179187"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#6295e2;fill-opacity:1;stroke:#fffff0;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse161200"
+       cx="142.5307"
+       cy="-139.45352"
+       rx="3.0409245"
+       ry="2.9321752"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#7cb0fc;fill-opacity:0.996078;stroke:#fffff0;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse161202"
+       cx="154.38364"
+       cy="-134.17944"
+       rx="3.0409245"
+       ry="2.9321752"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.793749, 0.793749;stroke-dashoffset:0;stroke-opacity:1;opacity:1"
+       d="m 168.87974,133.46187 c 0.0768,-0.064 9.85239,-0.44101 13.67188,-1.20919 3.81949,-0.76818 12.97718,-7.07462 12.97718,-7.07462"
+       id="path227147"
+       sodipodi:nodetypes="czc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#accbf8;fill-opacity:1;stroke:#fffff0;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse161204"
+       cx="168.2773"
+       cy="-132.42053"
+       rx="3.0409245"
+       ry="2.9321752"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#d1e9f8;fill-opacity:1;stroke:#fffff0;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse161208"
+       cx="195.02275"
+       cy="-124.4637"
+       rx="3.0409245"
+       ry="2.9321752"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.6477px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.348578"
+       x="162.41939"
+       y="16.347488"
+       id="text214517"
+       inkscape:export-filename="/home/ssadok/Téléchargements/rect4218.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.348578"
+         x="162.41939"
+         y="16.347488"
+         id="tspan66103" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.6477px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.348578"
+       x="135.08919"
+       y="81.221146"
+       id="text220097"
+       inkscape:export-filename="/home/ssadok/Téléchargements/rect4218.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.348578"
+         x="135.08919"
+         y="81.221146"
+         id="tspan220095" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.6477px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.348578"
+       x="134.86453"
+       y="146.83173"
+       id="text221615"
+       inkscape:export-filename="/home/ssadok/Téléchargements/rect4218.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.348578"
+         x="134.86453"
+         y="146.83173"
+         id="tspan221613" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.646816;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM);opacity:1"
+       d="m 111.7335,160.3155 h 93.63871"
+       id="path222220"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.73, 1.46;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 119.34335,13.78377 V 215.47076"
+       id="path10969"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.31692px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#d40000;stroke-width:0.323769"
+       x="-166.47043"
+       y="116.1179"
+       id="text223977"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/rect4218.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.31692px;font-family:serif;-inkscape-font-specification:'serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#d40000;stroke-width:0.323769"
+         x="-166.47043"
+         y="116.1179"
+         id="tspan223975" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.31692px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#aa4400;stroke-width:0.323769"
+       x="-36.430679"
+       y="115.9851"
+       id="text226089"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/rect4218.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.31692px;font-family:serif;-inkscape-font-specification:'serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#aa4400;stroke-width:0.323769"
+         x="-36.430679"
+         y="115.9851"
+         id="tspan226087" /></text>
+    <path
+       style="fill:#3f41ff;fill-opacity:1;stroke-width:0.0571252"
+       d="m 85.740337,15.535931 c -0.09197,-0.09198 -0.115557,-0.190343 -0.115557,-0.481884 v -0.366321 l -0.299908,0.165349 c -0.333617,0.183933 -0.509064,0.208288 -0.611485,0.08488 -0.153189,-0.184574 -0.04532,-0.337569 0.440104,-0.624037 l 0.471289,-0.278141 v -0.311586 -0.311583 l -0.328475,0.188153 c -0.982275,0.562664 -1.117204,0.602434 -1.328154,0.391484 -0.280848,-0.280841 -0.1232,-0.470828 0.829502,-0.99969 0.687431,-0.381607 0.823565,-0.478846 0.825181,-0.5894 0.0022,-0.132258 0.0015,-0.132201 -0.336809,0.05384 -0.2956,0.162507 -0.357463,0.17771 -0.485567,0.119342 -0.145742,-0.0664 -0.195394,-0.25307 -0.103094,-0.387545 0.0231,-0.03363 0.241201,-0.173703 0.484693,-0.311274 l 0.442722,-0.250129 v -0.395084 -0.39508 l -0.157094,0.102601 c -0.0864,0.05643 -0.257351,0.175064 -0.379889,0.263633 -0.259814,0.187797 -0.373689,0.199741 -0.549208,0.05761 -0.139061,-0.1126 -0.149115,-0.20183 -0.08757,-0.7766 l 0.04014,-0.374964 -0.375241,0.213334 -0.375233,0.213336 -4.38e-4,0.587374 c -4.29e-4,0.556039 -0.0074,0.590033 -0.129057,0.637224 -0.08491,0.03294 -0.167301,0.02519 -0.242781,-0.02285 -0.09369,-0.05963 -0.11727,-0.146089 -0.131048,-0.480793 -0.01581,-0.385114 -0.0231,-0.404734 -0.128532,-0.348304 -0.104345,0.05584 -0.111731,0.125752 -0.111731,1.057477 0,0.921517 -0.0087,1.006406 -0.114248,1.111933 -0.140868,0.140869 -0.348305,0.14671 -0.507068,0.01427 -0.106992,-0.08924 -0.123884,-0.183506 -0.157508,-0.87898 l -0.03767,-0.779012 -0.248697,0.150217 -0.248697,0.150219 v 0.548534 c 0,0.458861 -0.01704,0.563987 -0.104468,0.643074 -0.260535,0.235785 -0.466785,0.02948 -0.466785,-0.466927 0,-0.193896 -0.01464,-0.352535 -0.03257,-0.352535 -0.01792,0 -0.18419,0.08355 -0.369448,0.185656 -0.37264,0.20539 -0.540517,0.181459 -0.540517,-0.07705 0,-0.104032 0.07386,-0.180094 0.314194,-0.323574 0.172802,-0.103159 0.320583,-0.206248 0.328402,-0.229079 0.0078,-0.02283 -0.114122,-0.113601 -0.270991,-0.201707 -0.359532,-0.201936 -0.441752,-0.339081 -0.317218,-0.52914 0.05005,-0.07644 0.133198,-0.138984 0.184693,-0.138984 0.05151,0 0.297611,0.119589 0.546926,0.265748 l 0.453293,0.265749 0.251516,-0.122193 c 0.138325,-0.06721 0.251508,-0.145039 0.251508,-0.172959 0,-0.02791 -0.237782,-0.187902 -0.528407,-0.35551 -0.614671,-0.354488 -0.785475,-0.50723 -0.785475,-0.7024057 0,-0.175087 0.26334,-0.395636 0.433548,-0.3631 0.06703,0.01282 0.481349,0.233925 0.920683,0.4913507 0.514702,0.301593 0.832408,0.45514 0.893337,0.431759 0.145466,-0.05583 0.11703,-0.09707 -0.183131,-0.265654 -0.353232,-0.198387 -0.429665,-0.2919247 -0.38475,-0.4708627 0.06441,-0.256471 0.266868,-0.243381 0.766525,0.04955 0.246758,0.144666 0.472097,0.2624477 0.500758,0.2617367 0.02864,-6.47e-4 0.192656,-0.08878 0.364429,-0.1957187 l 0.31233,-0.194429 -0.438707,-0.199926 c -0.34491,-0.157174 -0.446617,-0.231444 -0.475717,-0.347378 -0.0569,-0.226774 0.09625,-0.397848 0.515934,-0.57621 0.207344,-0.08813 0.369181,-0.183665 0.35963,-0.212314 -0.0095,-0.02865 -0.163367,-0.13043 -0.341808,-0.226181 l -0.324446,-0.174093 -0.450348,0.264023 c -0.247699,0.145211 -0.500795,0.264022 -0.562439,0.264022 -0.146675,0 -0.249192,-0.106814 -0.249192,-0.259634 0,-0.139568 0.09625,-0.23423 0.444681,-0.437338 0.212297,-0.123753 0.233068,-0.152351 0.1567,-0.215732 -0.07429,-0.06166 -0.217572,0.0045 -0.917323,0.423336 -0.923086,0.552549 -1.117024,0.599159 -1.279887,0.307599 -0.155637,-0.278598 -0.04291,-0.428134 0.624884,-0.828784 0.32964,-0.197777 0.606211,-0.38019 0.614603,-0.405361 0.0084,-0.02517 -0.102869,-0.103149 -0.24723,-0.173294 l -0.262485,-0.127527 -0.425876,0.258552 c -0.556871,0.338087 -0.821691,0.334416 -0.821691,-0.01139 0,-0.100546 0.08533,-0.186796 0.350979,-0.354758 L 80.842827,6.4619733 80.51911,6.2792803 C 80.159002,6.0760449 80.065163,5.9565919 80.148562,5.8075769 c 0.07998,-0.142931 0.256448,-0.121528 0.600929,0.07288 0.167009,0.09425 0.315819,0.171376 0.330681,0.171376 0.01487,0 0.03453,-0.199223 0.04372,-0.44272 0.01654,-0.438211 0.01828,-0.442909 0.177238,-0.46113 0.28049,-0.03216 0.325014,0.06007 0.325014,0.673265 v 0.5551794 l 0.285627,0.155458 0.285627,0.155456 V 5.9167209 c 0,-0.764461 0.0015,-0.771554 0.150515,-0.889006 0.179868,-0.141482 0.294828,-0.148766 0.465145,-0.02947 0.12288,0.08606 0.126968,0.120727 0.126968,1.076525 0,0.9150504 0.0084,0.9951944 0.114246,1.0909954 0.113169,0.102411 0.114254,0.09977 0.114254,-0.276773 0,-0.304002 0.02287,-0.403059 0.114245,-0.494419 0.137533,-0.13753 0.166654,-0.139763 0.330042,-0.02533 0.116279,0.08145 0.127003,0.13552 0.127491,0.64266 l 4.3e-4,0.553731 0.373617,0.212409 0.373622,0.21241 -0.03934,-0.484767 c -0.03417,-0.420873 -0.02586,-0.49969 0.06316,-0.598004 0.16121,-0.178138 0.37014,-0.138359 0.758846,0.14448 l 0.354177,0.257719 V 6.8838693 6.4578573 L 85.153532,6.1814733 C 84.668664,5.8971239 84.561347,5.7463409 84.71342,5.5631049 c 0.105541,-0.127172 0.307404,-0.09888 0.623252,0.08735 l 0.288141,0.169894 v -0.133087 c 0,-0.111778 -0.13316,-0.208272 -0.83144,-0.602504 -0.911699,-0.514721 -1.030061,-0.6371886 -0.877864,-0.9083496 0.172517,-0.3073497 0.322427,-0.2933282 1.015899,0.095014 0.345981,0.1937481 0.643535,0.3522696 0.661224,0.3522696 0.0177,0 0.03176,-0.1349582 0.03126,-0.2999061 l -7.31e-4,-0.2998939 -0.463163,-0.256562 c -0.494158,-0.2737289 -0.538024,-0.322664 -0.4836,-0.5395106 0.05369,-0.2139288 0.219021,-0.2285815 0.559495,-0.049586 0.166878,0.087729 0.322696,0.168221 0.346258,0.1788743 0.02354,0.01065 0.04283,-0.1449512 0.04283,-0.3457871 0,-0.4422394 0.08531,-0.592352 0.305298,-0.5371399 0.147273,0.036962 0.151703,0.050548 0.151703,0.4654242 0,0.2350429 0.02113,0.4273509 0.04699,0.4273509 0.02586,0 0.192705,-0.078921 0.370804,-0.1753881 0.346585,-0.1877222 0.521718,-0.1856387 0.582838,0.0069 0.06615,0.2085454 -0.03024,0.3186993 -0.515577,0.5889485 l -0.485042,0.2700816 v 0.2830864 c 0,0.16187 0.02601,0.2830868 0.06076,0.2830868 0.03344,0 0.343812,-0.1585218 0.689793,-0.3522699 0.693469,-0.3883441 0.843381,-0.4023641 1.015893,-0.095014 0.150458,0.268059 0.03245,0.3924979 -0.83437,0.8797869 -0.895977,0.503683 -0.961075,0.551991 -0.912916,0.677473 0.02958,0.07716 0.07612,0.06513 0.314034,-0.08126 0.303965,-0.187031 0.528086,-0.218532 0.635345,-0.0893 0.148993,0.179529 0.04503,0.338047 -0.379939,0.5791534 -0.601964,0.341549 -0.58858,0.323957 -0.58858,0.773429 0,0.216084 0.01472,0.392882 0.03264,0.392882 0.01792,0 0.19471,-0.115681 0.392843,-0.257065 0.393609,-0.280869 0.587035,-0.318039 0.745257,-0.143206 0.08835,0.09763 0.09801,0.17903 0.06777,0.571251 -0.01939,0.251568 -0.02507,0.457395 -0.01259,0.457395 0.01249,0 0.182237,-0.09505 0.37725,-0.211217 l 0.354572,-0.211216 -0.03247,-0.50123 c -0.02794,-0.431256 -0.01791,-0.519238 0.07198,-0.630228 0.08929,-0.110267 0.12814,-0.120698 0.26753,-0.07185 0.156892,0.05499 0.163713,0.07301 0.17996,0.475244 0.01408,0.348447 0.03151,0.412474 0.104646,0.38441 0.04827,-0.01852 0.0985,-0.03368 0.111642,-0.03368 0.01316,0 0.0239,-0.45873 0.0239,-1.0193994 0,-0.915031 0.01073,-1.02908 0.104467,-1.113941 0.138659,-0.125485 0.425822,-0.120242 0.543619,0.0099 0.06527,0.07213 0.09674,0.21802 0.10164,0.471282 0.0039,0.201749 0.02317,0.539529 0.04283,0.7506224 l 0.03575,0.383807 0.2285,-0.128302 0.228501,-0.128301 0.02856,-0.5696944 c 0.01571,-0.313332 0.04936,-0.601826 0.07478,-0.641099 0.07363,-0.11375 0.369705,-0.08728 0.437339,0.0391 0.03252,0.06077 0.05914,0.268876 0.05914,0.462454 v 0.35196 l 0.313323,-0.176779 c 0.447835,-0.252743 0.657804,-0.225797 0.657804,0.08442 0,0.04429 -0.141383,0.160319 -0.314187,0.2578444 -0.172801,0.09753 -0.327152,0.198294 -0.342999,0.223936 -0.01584,0.02564 0.09829,0.124829 0.253644,0.220417 0.32625,0.200743 0.410227,0.325546 0.341508,0.507529 -0.07486,0.198253 -0.300733,0.161145 -0.799698,-0.131376 l -0.443333,-0.259908 -0.266279,0.165737 -0.266279,0.165734 0.661792,0.384297 c 0.718211,0.41706 0.815423,0.540109 0.654416,0.828348 -0.05947,0.106489 -0.136369,0.1512 -0.280128,0.162906 -0.160562,0.01306 -0.346229,-0.07089 -0.978876,-0.442722 -0.429403,-0.25237 -0.819908,-0.458853 -0.86779,-0.458853 -0.193995,0 -0.13504,0.114179 0.148737,0.288058 0.436038,0.267173 0.502455,0.432654 0.242108,0.60324 -0.139571,0.09145 -0.156853,0.08656 -0.596734,-0.169033 -0.249151,-0.144766 -0.476186,-0.270102 -0.504521,-0.278519 -0.05869,-0.01744 -0.754504,0.360429 -0.754173,0.409556 1.14e-4,0.01768 0.183675,0.109263 0.407903,0.203513 0.466187,0.195966 0.61001,0.356355 0.529021,0.58996 -0.05217,0.150475 -0.215068,0.256997 -0.673594,0.440464 l -0.228321,0.09136 0.348609,0.196459 0.34861,0.1964577 0.490171,-0.2929507 c 0.476964,-0.285056 0.494035,-0.290421 0.633471,-0.19906 0.259892,0.170289 0.193268,0.335915 -0.24255,0.6029527 -0.288745,0.176921 -0.342499,0.288138 -0.139193,0.287985 0.05313,-3.9e-5 0.438851,-0.205613 0.85716,-0.456829 0.418311,-0.2512167 0.817872,-0.4711427 0.887916,-0.4887237 0.185444,-0.04653 0.436593,0.168276 0.436593,0.37344 0,0.1982767 -0.146516,0.3263277 -0.818093,0.7149987 -0.271439,0.157094 -0.48737,0.30562 -0.479846,0.330057 0.0075,0.02444 0.116793,0.10592 0.24282,0.181074 l 0.229136,0.136643 0.455836,-0.279409 c 0.50447,-0.309221 0.594273,-0.331066 0.732606,-0.17821 0.149769,0.165491 0.112492,0.282174 -0.148239,0.464009 -0.133532,0.09312 -0.29011,0.202828 -0.347955,0.243787 -0.09602,0.06799 -0.07466,0.09164 0.245489,0.271711 0.320679,0.180372 0.349209,0.212024 0.333673,0.370198 -0.02354,0.239621 -0.160392,0.248508 -0.55859,0.03627 -0.182197,-0.09711 -0.346952,-0.176566 -0.366117,-0.176566 -0.01917,0 -0.03485,0.174803 -0.03485,0.388453 0,0.41111 -0.05598,0.525549 -0.257064,0.525549 -0.216969,0 -0.257062,-0.108323 -0.257062,-0.694518 v -0.557409 l -0.24779,-0.145223 c -0.136289,-0.07987 -0.264822,-0.145222 -0.285626,-0.145222 -0.02082,0 -0.03782,0.328463 -0.03782,0.729918 0,0.568178 -0.01972,0.75805 -0.08894,0.856877 -0.118057,0.168549 -0.423605,0.172218 -0.57344,0.007 -0.0964,-0.106367 -0.110904,-0.231818 -0.12703,-1.098715 -0.01745,-0.938085 -0.04029,-1.062157 -0.196014,-1.065337 -0.02355,-4.33e-4 -0.04283,0.173928 -0.04283,0.387577 0,0.413416 -0.05579,0.525551 -0.261495,0.525551 -0.202716,0 -0.247347,-0.119326 -0.264712,-0.70775 l -0.0165,-0.558536 -0.363004,-0.203736 -0.363011,-0.203737 0.04077,0.543656 c 0.0395,0.526721 0.03661,0.546559 -0.09242,0.636941 -0.202271,0.141676 -0.312423,0.11607 -0.704596,-0.163779 -0.198133,-0.141384 -0.377433,-0.257062 -0.398438,-0.257062 -0.02099,0 -0.0306,0.172504 -0.02134,0.383346 l 0.0169,0.383344 0.407377,0.230752 c 0.224063,0.126911 0.448994,0.266031 0.499848,0.309151 0.145938,0.123743 0.116227,0.341659 -0.05734,0.420754 -0.131884,0.06009 -0.189572,0.04625 -0.481523,-0.115475 -0.387817,-0.214832 -0.396901,-0.216612 -0.396901,-0.07773 0,0.07689 0.227618,0.234523 0.828729,0.573893 0.455796,0.257334 0.86827,0.528234 0.916604,0.602002 0.105696,0.161305 0.05934,0.409745 -0.09153,0.490479 -0.199674,0.106859 -0.392015,0.05331 -0.935453,-0.26045 -0.761701,-0.439774 -0.718358,-0.434482 -0.718358,-0.08773 0,0.287766 0.0051,0.297187 0.258727,0.448833 0.740152,0.443122 0.769527,0.465993 0.769527,0.599213 0,0.30945 -0.260499,0.348966 -0.67793,0.102836 -0.155703,-0.09181 -0.298217,-0.151785 -0.316708,-0.133292 -0.01851,0.01848 -0.03358,0.208374 -0.03358,0.421964 0,0.328379 -0.01741,0.39768 -0.112942,0.44879 -0.08971,0.04801 -0.136716,0.03667 -0.228501,-0.05512 z m -0.08857,-5.6369027 c 0.173376,-0.118362 0.333879,-0.09276 0.592323,0.09444 0.130116,0.09425 0.249164,0.1713757 0.264543,0.1713757 0.01538,0 0.01231,-0.113856 -0.0066,-0.2530117 -0.058,-0.423254 -7.29e-4,-0.531376 0.364625,-0.693132 l 0.324927,-0.143683 -0.283484,-0.131496 c -0.401762,-0.186354 -0.449119,-0.260747 -0.404997,-0.636159 0.02024,-0.172299 0.01735,-0.312554 -0.0066,-0.311682 -0.02383,8.82e-4 -0.144322,0.07799 -0.267742,0.171375 -0.279549,0.211519 -0.344612,0.211369 -0.680407,-0.0016 -0.148627,-0.09425 -0.280331,-0.171376 -0.29268,-0.171376 -0.01232,0 -0.0079,0.140905 0.0098,0.31312 0.03884,0.376498 -0.0118,0.45427 -0.411888,0.632324 l -0.285628,0.127118 0.322835,0.143583 c 0.370651,0.164853 0.419327,0.257078 0.360692,0.683389 L 85.211126,10.187 85.375105,10.08147 c 0.09018,-0.05805 0.214685,-0.1401467 0.276658,-0.1824577 z"
+       id="path16217"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       id="path16079"
+       d="" />
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       id="path16059"
+       d="" />
+    <path
+       style="fill:#000000;stroke-width:0.264583"
+       id="path16039"
+       d="" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.60576px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.495433"
+       x="-141.19919"
+       y="9.2172861"
+       id="text100352"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/rect4218.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan100350"
+         style="stroke-width:0.495433"
+         x="-141.19919"
+         y="9.2172861" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.608;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 142.03674,157.42692 v 3.20244"
+       id="path21919"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.608;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 153.57517,157.42692 v 3.20244"
+       id="path22001"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.608;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 164.84664,157.42692 v 3.20244"
+       id="path22003"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.608;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 192.09977,157.42692 v 3.20244"
+       id="path22005"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.264583;opacity:1"
+       x="140.6505"
+       y="164.31277"
+       id="text24131"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan24129"
+         style="stroke-width:0.264583"
+         x="140.6505"
+         y="164.31277">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.264583;opacity:1"
+       x="152.69849"
+       y="164.31277"
+       id="text24215"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan24213"
+         style="stroke-width:0.264583"
+         x="152.69849"
+         y="164.31277">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.264583;opacity:1"
+       x="163.73602"
+       y="164.31277"
+       id="text24699"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan24697"
+         style="stroke-width:0.264583"
+         x="163.73602"
+         y="164.31277">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.264583;opacity:1"
+       x="191.11012"
+       y="164.31277"
+       id="text24805"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan24803"
+         style="stroke-width:0.264583"
+         x="191.11012"
+         y="164.31277">N</tspan></text>
+    <path
+       style="fill:#999999;stroke:#434644;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.695, 1.695;stroke-dashoffset:0;stroke-opacity:1;opacity:1"
+       d="m 165.63074,159.40765 h 25.19657"
+       id="path24909"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#5777a8;fill-opacity:1;stroke:#fffff0;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse175613"
+       cx="93.162582"
+       cy="166.85497"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#5777a8;fill-opacity:1;stroke:#fffff6;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse178232"
+       cx="130.75731"
+       cy="97.0317"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.608;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       d="m 130.39502,157.42692 v 3.20244"
+       id="path178234"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.264583;opacity:1"
+       x="129.00896"
+       y="164.31277"
+       id="text178238"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan178236"
+         style="stroke-width:0.264583"
+         x="129.00896"
+         y="164.31277">0</tspan></text>
+    <ellipse
+       style="fill:#5777a8;fill-opacity:0.994954;stroke:#ffffff;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse178494"
+       cx="130.22815"
+       cy="21.575054"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <ellipse
+       style="fill:#5777a8;fill-opacity:0.993752;stroke:#fffff0;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse178496"
+       cx="131.88533"
+       cy="143.54816"
+       rx="3.0409245"
+       ry="2.9321752"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       d="m 26.305577,190.62896 c 0.159553,0.1763 0.178456,0.63711 0.178456,4.3504 0,3.88662 -0.01265,4.16467 -0.197195,4.33167 -0.247645,0.22412 -0.493438,0.22724 -0.711663,0.009 -0.148221,-0.14824 -0.169444,-0.69413 -0.169444,-4.35943 0,-3.66529 0.02121,-4.21118 0.169444,-4.35942 0.225142,-0.22514 0.511383,-0.21427 0.730402,0.0277 z m -2.695754,0.10782 c 0.159377,0.17612 0.178456,0.62963 0.178456,4.24258 0,3.78216 -0.01286,4.05699 -0.19719,4.22384 -0.257739,0.23325 -0.403128,0.22512 -0.665451,-0.0372 -0.207887,-0.20789 -0.215657,-0.35943 -0.215657,-4.20537 0,-3.84595 0.0078,-3.99749 0.215657,-4.20538 0.267744,-0.26774 0.454043,-0.27276 0.684185,-0.0184 z m 1.343023,2.73581 c 0.179281,0.17928 0.179281,2.79683 0,2.97611 -0.07117,0.0712 -0.231294,0.1294 -0.355836,0.1294 -0.427866,0 -0.485242,-0.19124 -0.485242,-1.61746 0,-1.42621 0.05738,-1.61744 0.485242,-1.61744 0.124542,0 0.284669,0.0582 0.355836,0.12939 z m 3.930405,0.0949 c 0.16301,0.0949 0.188702,0.28485 0.188702,1.39472 0,1.15989 -0.02024,1.29566 -0.208569,1.39643 -0.283363,0.15165 -0.393751,0.14088 -0.592453,-0.0578 -0.246002,-0.24601 -0.246002,-2.43435 0,-2.68035 0.194947,-0.19495 0.346133,-0.20803 0.61232,-0.053 z m -6.556791,0.12319 c 0.123493,0.1763 0.167857,0.51197 0.167857,1.26996 0,1.09544 -0.145013,1.50962 -0.52855,1.50962 -0.431138,0 -0.549748,-0.32974 -0.549748,-1.52836 0,-0.96162 0.02997,-1.16109 0.197191,-1.31242 0.270263,-0.24458 0.513708,-0.2237 0.71325,0.0612 z m -1.476548,0.31013 c 0.221366,0.0823 0.242473,0.15896 0.240967,0.87542 -9.82e-4,0.43189 -0.03729,0.83731 -0.08088,0.90095 -0.125875,0.18382 -0.382691,0.24081 -0.645326,0.14318 -0.22137,-0.0823 -0.242477,-0.15897 -0.24097,-0.87543 9.82e-4,-0.43188 0.03729,-0.83731 0.08087,-0.90094 0.125875,-0.18383 0.382696,-0.24081 0.64533,-0.14318 z m 6.798683,0.11874 c 0.170434,0.17043 0.170434,1.51172 0,1.68215 -0.205877,0.20588 -0.598425,0.15046 -0.781041,-0.11026 -0.09232,-0.13181 -0.167861,-0.46067 -0.167861,-0.73082 0,-0.27014 0.07554,-0.599 0.167861,-0.73082 0.182616,-0.26072 0.575164,-0.31613 0.781041,-0.11025 z"
+       style="fill:#ffe6d5;stroke-width:0.0285299"
+       id="path49783"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       d="m 33.131491,190.62896 c 0.159553,0.1763 0.178456,0.63711 0.178456,4.3504 0,3.88662 -0.01265,4.16467 -0.197195,4.33167 -0.247645,0.22412 -0.493438,0.22724 -0.711663,0.009 -0.148221,-0.14824 -0.169444,-0.69413 -0.169444,-4.35943 0,-3.66529 0.02121,-4.21118 0.169444,-4.35942 0.225142,-0.22514 0.511383,-0.21427 0.730402,0.0277 z m -2.695754,0.10782 c 0.159377,0.17612 0.178456,0.62963 0.178456,4.24258 0,3.78216 -0.01286,4.05699 -0.19719,4.22384 -0.257739,0.23325 -0.403128,0.22512 -0.665451,-0.0372 -0.207887,-0.20789 -0.215657,-0.35943 -0.215657,-4.20537 0,-3.84595 0.0078,-3.99749 0.215657,-4.20538 0.267744,-0.26774 0.454043,-0.27276 0.684185,-0.0184 z m 1.343023,2.73581 c 0.179281,0.17928 0.179281,2.79683 0,2.97611 -0.07117,0.0712 -0.231294,0.1294 -0.355836,0.1294 -0.427866,0 -0.485242,-0.19124 -0.485242,-1.61746 0,-1.42621 0.05738,-1.61744 0.485242,-1.61744 0.124542,0 0.284669,0.0582 0.355836,0.12939 z m 3.930405,0.0949 c 0.16301,0.0949 0.188702,0.28485 0.188702,1.39472 0,1.15989 -0.02024,1.29566 -0.208569,1.39643 -0.283363,0.15165 -0.393751,0.14088 -0.592453,-0.0578 -0.246002,-0.24601 -0.246002,-2.43435 0,-2.68035 0.194947,-0.19495 0.346133,-0.20803 0.61232,-0.053 z m -6.556791,0.12319 c 0.123493,0.1763 0.167857,0.51197 0.167857,1.26996 0,1.09544 -0.145013,1.50962 -0.52855,1.50962 -0.431138,0 -0.549748,-0.32974 -0.549748,-1.52836 0,-0.96162 0.02997,-1.16109 0.197191,-1.31242 0.270263,-0.24458 0.513708,-0.2237 0.71325,0.0612 z m -1.476548,0.31013 c 0.221366,0.0823 0.242473,0.15896 0.240967,0.87542 -9.82e-4,0.43189 -0.03729,0.83731 -0.08088,0.90095 -0.125875,0.18382 -0.382691,0.24081 -0.645326,0.14318 -0.22137,-0.0823 -0.242477,-0.15897 -0.24097,-0.87543 9.82e-4,-0.43188 0.03729,-0.83731 0.08087,-0.90094 0.125875,-0.18383 0.382696,-0.24081 0.64533,-0.14318 z m 6.798683,0.11874 c 0.170434,0.17043 0.170434,1.51172 0,1.68215 -0.205877,0.20588 -0.598425,0.15046 -0.781041,-0.11026 -0.09232,-0.13181 -0.167861,-0.46067 -0.167861,-0.73082 0,-0.27014 0.07554,-0.599 0.167861,-0.73082 0.182616,-0.26072 0.575164,-0.31613 0.781041,-0.11025 z"
+       style="fill:#ffccaa;stroke-width:0.0285299"
+       id="path49880"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       d="m 41.168722,190.62896 c 0.159553,0.1763 0.178456,0.63711 0.178456,4.3504 0,3.88662 -0.01265,4.16467 -0.197195,4.33167 -0.247645,0.22412 -0.493438,0.22724 -0.711663,0.009 -0.148221,-0.14824 -0.169444,-0.69413 -0.169444,-4.35943 0,-3.66529 0.02121,-4.21118 0.169444,-4.35942 0.225142,-0.22514 0.511383,-0.21427 0.730402,0.0277 z m -2.695754,0.10782 c 0.159377,0.17612 0.178456,0.62963 0.178456,4.24258 0,3.78216 -0.01286,4.05699 -0.19719,4.22384 -0.257739,0.23325 -0.403128,0.22512 -0.665451,-0.0372 -0.207887,-0.20789 -0.215657,-0.35943 -0.215657,-4.20537 0,-3.84595 0.0078,-3.99749 0.215657,-4.20538 0.267744,-0.26774 0.454043,-0.27276 0.684185,-0.0184 z m 1.343023,2.73581 c 0.179281,0.17928 0.179281,2.79683 0,2.97611 -0.07117,0.0712 -0.231294,0.1294 -0.355836,0.1294 -0.427866,0 -0.485242,-0.19124 -0.485242,-1.61746 0,-1.42621 0.05738,-1.61744 0.485242,-1.61744 0.124542,0 0.284669,0.0582 0.355836,0.12939 z m 3.930405,0.0949 c 0.16301,0.0949 0.188702,0.28485 0.188702,1.39472 0,1.15989 -0.02024,1.29566 -0.208569,1.39643 -0.283363,0.15165 -0.393751,0.14088 -0.592453,-0.0578 -0.246002,-0.24601 -0.246002,-2.43435 0,-2.68035 0.194947,-0.19495 0.346133,-0.20803 0.61232,-0.053 z m -6.556791,0.12319 c 0.123493,0.1763 0.167857,0.51197 0.167857,1.26996 0,1.09544 -0.145013,1.50962 -0.52855,1.50962 -0.431138,0 -0.549748,-0.32974 -0.549748,-1.52836 0,-0.96162 0.02997,-1.16109 0.197191,-1.31242 0.270263,-0.24458 0.513708,-0.2237 0.71325,0.0612 z m -1.476548,0.31013 c 0.221366,0.0823 0.242473,0.15896 0.240967,0.87542 -9.82e-4,0.43189 -0.03729,0.83731 -0.08088,0.90095 -0.125875,0.18382 -0.382691,0.24081 -0.645326,0.14318 -0.22137,-0.0823 -0.242477,-0.15897 -0.24097,-0.87543 9.82e-4,-0.43188 0.03729,-0.83731 0.08087,-0.90094 0.125875,-0.18383 0.382696,-0.24081 0.64533,-0.14318 z m 6.798683,0.11874 c 0.170434,0.17043 0.170434,1.51172 0,1.68215 -0.205877,0.20588 -0.598425,0.15046 -0.781041,-0.11026 -0.09232,-0.13181 -0.167861,-0.46067 -0.167861,-0.73082 0,-0.27014 0.07554,-0.599 0.167861,-0.73082 0.182616,-0.26072 0.575164,-0.31613 0.781041,-0.11025 z"
+       style="fill:#ffb380;stroke-width:0.0285299"
+       id="path49884"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       d="m 49.185066,190.62896 c 0.159553,0.1763 0.178456,0.63711 0.178456,4.3504 0,3.88662 -0.01265,4.16467 -0.197195,4.33167 -0.247645,0.22412 -0.493438,0.22724 -0.711663,0.009 -0.148221,-0.14824 -0.169444,-0.69413 -0.169444,-4.35943 0,-3.66529 0.02121,-4.21118 0.169444,-4.35942 0.225142,-0.22514 0.511383,-0.21427 0.730402,0.0277 z m -2.695754,0.10782 c 0.159377,0.17612 0.178456,0.62963 0.178456,4.24258 0,3.78216 -0.01286,4.05699 -0.19719,4.22384 -0.257739,0.23325 -0.403128,0.22512 -0.665451,-0.0372 -0.207887,-0.20789 -0.215657,-0.35943 -0.215657,-4.20537 0,-3.84595 0.0078,-3.99749 0.215657,-4.20538 0.267744,-0.26774 0.454043,-0.27276 0.684185,-0.0184 z m 1.343023,2.73581 c 0.179281,0.17928 0.179281,2.79683 0,2.97611 -0.07117,0.0712 -0.231294,0.1294 -0.355836,0.1294 -0.427866,0 -0.485242,-0.19124 -0.485242,-1.61746 0,-1.42621 0.05738,-1.61744 0.485242,-1.61744 0.124542,0 0.284669,0.0582 0.355836,0.12939 z m 3.930405,0.0949 c 0.16301,0.0949 0.188702,0.28485 0.188702,1.39472 0,1.15989 -0.02024,1.29566 -0.208569,1.39643 -0.283363,0.15165 -0.393751,0.14088 -0.592453,-0.0578 -0.246002,-0.24601 -0.246002,-2.43435 0,-2.68035 0.194947,-0.19495 0.346133,-0.20803 0.61232,-0.053 z m -6.556791,0.12319 c 0.123493,0.1763 0.167857,0.51197 0.167857,1.26996 0,1.09544 -0.145013,1.50962 -0.52855,1.50962 -0.431138,0 -0.549748,-0.32974 -0.549748,-1.52836 0,-0.96162 0.02997,-1.16109 0.197191,-1.31242 0.270263,-0.24458 0.513708,-0.2237 0.71325,0.0612 z m -1.476548,0.31013 c 0.221366,0.0823 0.242473,0.15896 0.240967,0.87542 -9.82e-4,0.43189 -0.03729,0.83731 -0.08088,0.90095 -0.125875,0.18382 -0.382691,0.24081 -0.645326,0.14318 -0.22137,-0.0823 -0.242477,-0.15897 -0.24097,-0.87543 9.82e-4,-0.43188 0.03729,-0.83731 0.08087,-0.90094 0.125875,-0.18383 0.382696,-0.24081 0.64533,-0.14318 z m 6.798683,0.11874 c 0.170434,0.17043 0.170434,1.51172 0,1.68215 -0.205877,0.20588 -0.598425,0.15046 -0.781041,-0.11026 -0.09232,-0.13181 -0.167861,-0.46067 -0.167861,-0.73082 0,-0.27014 0.07554,-0.599 0.167861,-0.73082 0.182616,-0.26072 0.575164,-0.31613 0.781041,-0.11025 z"
+       style="fill:#ff9955;stroke-width:0.0285299"
+       id="path49888"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       d="m 56.979257,190.62896 c 0.159553,0.1763 0.178456,0.63711 0.178456,4.3504 0,3.88662 -0.01265,4.16467 -0.197195,4.33167 -0.247645,0.22412 -0.493438,0.22724 -0.711663,0.009 -0.148221,-0.14824 -0.169444,-0.69413 -0.169444,-4.35943 0,-3.66529 0.02121,-4.21118 0.169444,-4.35942 0.225142,-0.22514 0.511383,-0.21427 0.730402,0.0277 z m -2.695754,0.10782 c 0.159377,0.17612 0.178456,0.62963 0.178456,4.24258 0,3.78216 -0.01286,4.05699 -0.19719,4.22384 -0.257739,0.23325 -0.403128,0.22512 -0.665451,-0.0372 -0.207887,-0.20789 -0.215657,-0.35943 -0.215657,-4.20537 0,-3.84595 0.0078,-3.99749 0.215657,-4.20538 0.267744,-0.26774 0.454043,-0.27276 0.684185,-0.0184 z m 1.343023,2.73581 c 0.179281,0.17928 0.179281,2.79683 0,2.97611 -0.07117,0.0712 -0.231294,0.1294 -0.355836,0.1294 -0.427866,0 -0.485242,-0.19124 -0.485242,-1.61746 0,-1.42621 0.05738,-1.61744 0.485242,-1.61744 0.124542,0 0.284669,0.0582 0.355836,0.12939 z m 3.930405,0.0949 c 0.16301,0.0949 0.188702,0.28485 0.188702,1.39472 0,1.15989 -0.02024,1.29566 -0.208569,1.39643 -0.283363,0.15165 -0.393751,0.14088 -0.592453,-0.0578 -0.246002,-0.24601 -0.246002,-2.43435 0,-2.68035 0.194947,-0.19495 0.346133,-0.20803 0.61232,-0.053 z m -6.556791,0.12319 c 0.123493,0.1763 0.167857,0.51197 0.167857,1.26996 0,1.09544 -0.145013,1.50962 -0.52855,1.50962 -0.431138,0 -0.549748,-0.32974 -0.549748,-1.52836 0,-0.96162 0.02997,-1.16109 0.197191,-1.31242 0.270263,-0.24458 0.513708,-0.2237 0.71325,0.0612 z m -1.476548,0.31013 c 0.221366,0.0823 0.242473,0.15896 0.240967,0.87542 -9.82e-4,0.43189 -0.03729,0.83731 -0.08088,0.90095 -0.125875,0.18382 -0.382691,0.24081 -0.645326,0.14318 -0.22137,-0.0823 -0.242477,-0.15897 -0.24097,-0.87543 9.82e-4,-0.43188 0.03729,-0.83731 0.08087,-0.90094 0.125875,-0.18383 0.382696,-0.24081 0.64533,-0.14318 z m 6.798683,0.11874 c 0.170434,0.17043 0.170434,1.51172 0,1.68215 -0.205877,0.20588 -0.598425,0.15046 -0.781041,-0.11026 -0.09232,-0.13181 -0.167861,-0.46067 -0.167861,-0.73082 0,-0.27014 0.07554,-0.599 0.167861,-0.73082 0.182616,-0.26072 0.575164,-0.31613 0.781041,-0.11025 z"
+       style="fill:#ff7f2a;stroke-width:0.0285299"
+       id="path49982"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       d="m 65.238641,190.62896 c 0.159553,0.1763 0.178456,0.63711 0.178456,4.3504 0,3.88662 -0.01265,4.16467 -0.197195,4.33167 -0.247645,0.22412 -0.493438,0.22724 -0.711663,0.009 -0.148221,-0.14824 -0.169444,-0.69413 -0.169444,-4.35943 0,-3.66529 0.02121,-4.21118 0.169444,-4.35942 0.225142,-0.22514 0.511383,-0.21427 0.730402,0.0277 z m -2.695754,0.10782 c 0.159377,0.17612 0.178456,0.62963 0.178456,4.24258 0,3.78216 -0.01286,4.05699 -0.19719,4.22384 -0.257739,0.23325 -0.403128,0.22512 -0.665451,-0.0372 -0.207887,-0.20789 -0.215657,-0.35943 -0.215657,-4.20537 0,-3.84595 0.0078,-3.99749 0.215657,-4.20538 0.267744,-0.26774 0.454043,-0.27276 0.684185,-0.0184 z m 1.343023,2.73581 c 0.179281,0.17928 0.179281,2.79683 0,2.97611 -0.07117,0.0712 -0.231294,0.1294 -0.355836,0.1294 -0.427866,0 -0.485242,-0.19124 -0.485242,-1.61746 0,-1.42621 0.05738,-1.61744 0.485242,-1.61744 0.124542,0 0.284669,0.0582 0.355836,0.12939 z m 3.930405,0.0949 c 0.16301,0.0949 0.188702,0.28485 0.188702,1.39472 0,1.15989 -0.02024,1.29566 -0.208569,1.39643 -0.283363,0.15165 -0.393751,0.14088 -0.592453,-0.0578 -0.246002,-0.24601 -0.246002,-2.43435 0,-2.68035 0.194947,-0.19495 0.346133,-0.20803 0.61232,-0.053 z m -6.556791,0.12319 c 0.123493,0.1763 0.167857,0.51197 0.167857,1.26996 0,1.09544 -0.145013,1.50962 -0.52855,1.50962 -0.431138,0 -0.549748,-0.32974 -0.549748,-1.52836 0,-0.96162 0.02997,-1.16109 0.197191,-1.31242 0.270263,-0.24458 0.513708,-0.2237 0.71325,0.0612 z m -1.476548,0.31013 c 0.221366,0.0823 0.242473,0.15896 0.240967,0.87542 -9.82e-4,0.43189 -0.03729,0.83731 -0.08088,0.90095 -0.125875,0.18382 -0.382691,0.24081 -0.645326,0.14318 -0.22137,-0.0823 -0.242477,-0.15897 -0.24097,-0.87543 9.82e-4,-0.43188 0.03729,-0.83731 0.08087,-0.90094 0.125875,-0.18383 0.382696,-0.24081 0.64533,-0.14318 z m 6.798683,0.11874 c 0.170434,0.17043 0.170434,1.51172 0,1.68215 -0.205877,0.20588 -0.598425,0.15046 -0.781041,-0.11026 -0.09232,-0.13181 -0.167861,-0.46067 -0.167861,-0.73082 0,-0.27014 0.07554,-0.599 0.167861,-0.73082 0.182616,-0.26072 0.575164,-0.31613 0.781041,-0.11025 z"
+       style="fill:#ff6600;stroke-width:0.0285299"
+       id="path50004"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       d="m 73.032832,190.62896 c 0.159553,0.1763 0.178456,0.63711 0.178456,4.3504 0,3.88662 -0.01265,4.16467 -0.197195,4.33167 -0.247645,0.22412 -0.493438,0.22724 -0.711663,0.009 -0.148221,-0.14824 -0.169444,-0.69413 -0.169444,-4.35943 0,-3.66529 0.02121,-4.21118 0.169444,-4.35942 0.225142,-0.22514 0.511383,-0.21427 0.730402,0.0277 z m -2.695754,0.10782 c 0.159377,0.17612 0.178456,0.62963 0.178456,4.24258 0,3.78216 -0.01286,4.05699 -0.19719,4.22384 -0.257739,0.23325 -0.403128,0.22512 -0.665451,-0.0372 -0.207887,-0.20789 -0.215657,-0.35943 -0.215657,-4.20537 0,-3.84595 0.0078,-3.99749 0.215657,-4.20538 0.267744,-0.26774 0.454043,-0.27276 0.684185,-0.0184 z m 1.343023,2.73581 c 0.179281,0.17928 0.179281,2.79683 0,2.97611 -0.07117,0.0712 -0.231294,0.1294 -0.355836,0.1294 -0.427866,0 -0.485242,-0.19124 -0.485242,-1.61746 0,-1.42621 0.05738,-1.61744 0.485242,-1.61744 0.124542,0 0.284669,0.0582 0.355836,0.12939 z m 3.930405,0.0949 c 0.16301,0.0949 0.188702,0.28485 0.188702,1.39472 0,1.15989 -0.02024,1.29566 -0.208569,1.39643 -0.283363,0.15165 -0.393751,0.14088 -0.592453,-0.0578 -0.246002,-0.24601 -0.246002,-2.43435 0,-2.68035 0.194947,-0.19495 0.346133,-0.20803 0.61232,-0.053 z m -6.556791,0.12319 c 0.123493,0.1763 0.167857,0.51197 0.167857,1.26996 0,1.09544 -0.145013,1.50962 -0.52855,1.50962 -0.431138,0 -0.549748,-0.32974 -0.549748,-1.52836 0,-0.96162 0.02997,-1.16109 0.197191,-1.31242 0.270263,-0.24458 0.513708,-0.2237 0.71325,0.0612 z m -1.476548,0.31013 c 0.221366,0.0823 0.242473,0.15896 0.240967,0.87542 -9.82e-4,0.43189 -0.03729,0.83731 -0.08088,0.90095 -0.125875,0.18382 -0.382691,0.24081 -0.645326,0.14318 -0.22137,-0.0823 -0.242477,-0.15897 -0.24097,-0.87543 9.82e-4,-0.43188 0.03729,-0.83731 0.08087,-0.90094 0.125875,-0.18383 0.382696,-0.24081 0.64533,-0.14318 z m 6.798683,0.11874 c 0.170434,0.17043 0.170434,1.51172 0,1.68215 -0.205877,0.20588 -0.598425,0.15046 -0.781041,-0.11026 -0.09232,-0.13181 -0.167861,-0.46067 -0.167861,-0.73082 0,-0.27014 0.07554,-0.599 0.167861,-0.73082 0.182616,-0.26072 0.575164,-0.31613 0.781041,-0.11025 z"
+       style="fill:#d45500;stroke-width:0.0285299"
+       id="path50026"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g50264"
+       style="fill:url(#linearGradient50302);fill-opacity:1"
+       transform="translate(0,7.5657374)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:url(#linearGradient51064);fill-opacity:1;stroke:#ffffef;stroke-width:0.196;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 17.074105,181.21081 H 33.12768 l -5.938942,-12.51978 h -3.883046 z"
+         id="path48131"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:url(#linearGradient51066);fill-opacity:1;stroke:#ffffef;stroke-width:0.196;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 23.900019,181.21081 H 39.953594 L 34.014652,168.69103 H 30.131606 Z"
+         id="path49878"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:url(#linearGradient51068);fill-opacity:1;stroke:#ffffef;stroke-width:0.196;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 31.93725,181.21081 H 47.990825 L 42.051883,168.69103 H 38.168837 Z"
+         id="path49882"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:url(#linearGradient51070);fill-opacity:1;stroke:#ffffef;stroke-width:0.196;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 39.953594,181.21081 H 56.007169 L 50.068227,168.69103 H 46.185181 Z"
+         id="path49886"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:url(#linearGradient50530);fill-opacity:1;stroke:#ffffef;stroke-width:0.196;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 47.747785,181.21081 H 63.80136 l -5.938942,-12.51978 h -3.883046 z"
+         id="path49980"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:url(#linearGradient51072);fill-opacity:1;stroke:#ffffef;stroke-width:0.196;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 56.007169,181.21081 H 72.060744 L 66.121802,168.69103 H 62.238756 Z"
+         id="path50002"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:url(#linearGradient51074);fill-opacity:1;stroke:#ffffef;stroke-width:0.196;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 63.80136,181.21081 H 79.854935 L 73.915993,168.69103 H 70.032947 Z"
+         id="path50024"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:url(#linearGradient51076);fill-opacity:1;stroke:#ffffef;stroke-width:0.196;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+         d="M 72.060744,181.21081 H 88.114319 L 82.175377,168.69103 H 78.292331 Z"
+         id="path50046"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <path
+       d="m 81.292216,190.62896 c 0.159553,0.1763 0.178456,0.63711 0.178456,4.3504 0,3.88662 -0.01265,4.16467 -0.197195,4.33167 -0.247645,0.22412 -0.493438,0.22724 -0.711663,0.009 -0.148221,-0.14824 -0.169444,-0.69413 -0.169444,-4.35943 0,-3.66529 0.02121,-4.21118 0.169444,-4.35942 0.225142,-0.22514 0.511383,-0.21427 0.730402,0.0277 z m -2.695754,0.10782 c 0.159377,0.17612 0.178456,0.62963 0.178456,4.24258 0,3.78216 -0.01286,4.05699 -0.19719,4.22384 -0.257739,0.23325 -0.403128,0.22512 -0.665451,-0.0372 -0.207887,-0.20789 -0.215657,-0.35943 -0.215657,-4.20537 0,-3.84595 0.0078,-3.99749 0.215657,-4.20538 0.267744,-0.26774 0.454043,-0.27276 0.684185,-0.0184 z m 1.343023,2.73581 c 0.179281,0.17928 0.179281,2.79683 0,2.97611 -0.07117,0.0712 -0.231294,0.1294 -0.355836,0.1294 -0.427866,0 -0.485242,-0.19124 -0.485242,-1.61746 0,-1.42621 0.05738,-1.61744 0.485242,-1.61744 0.124542,0 0.284669,0.0582 0.355836,0.12939 z m 3.930405,0.0949 c 0.16301,0.0949 0.188702,0.28485 0.188702,1.39472 0,1.15989 -0.02024,1.29566 -0.208569,1.39643 -0.283363,0.15165 -0.393751,0.14088 -0.592453,-0.0578 -0.246002,-0.24601 -0.246002,-2.43435 0,-2.68035 0.194947,-0.19495 0.346133,-0.20803 0.61232,-0.053 z m -6.556791,0.12319 c 0.123493,0.1763 0.167857,0.51197 0.167857,1.26996 0,1.09544 -0.145013,1.50962 -0.52855,1.50962 -0.431138,0 -0.549748,-0.32974 -0.549748,-1.52836 0,-0.96162 0.02997,-1.16109 0.197191,-1.31242 0.270263,-0.24458 0.513708,-0.2237 0.71325,0.0612 z m -1.476548,0.31013 c 0.221366,0.0823 0.242473,0.15896 0.240967,0.87542 -9.82e-4,0.43189 -0.03729,0.83731 -0.08088,0.90095 -0.125875,0.18382 -0.382691,0.24081 -0.645326,0.14318 -0.22137,-0.0823 -0.242477,-0.15897 -0.24097,-0.87543 9.82e-4,-0.43188 0.03729,-0.83731 0.08087,-0.90094 0.125875,-0.18383 0.382696,-0.24081 0.64533,-0.14318 z m 6.798683,0.11874 c 0.170434,0.17043 0.170434,1.51172 0,1.68215 -0.205877,0.20588 -0.598425,0.15046 -0.781041,-0.11026 -0.09232,-0.13181 -0.167861,-0.46067 -0.167861,-0.73082 0,-0.27014 0.07554,-0.599 0.167861,-0.73082 0.182616,-0.26072 0.575164,-0.31613 0.781041,-0.11025 z"
+       style="fill:#aa4400;stroke-width:0.0285299"
+       id="path50048"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;fill-opacity:0.1;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker138691);marker-end:url(#marker3160)"
+       d="M 52.907348,223.28534 V 205.67686"
+       id="path2617"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3160)"
+       d="M 52.907348,161.22947 V 143.62099"
+       id="path3168"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#d40000;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3160);opacity:1"
+       d="M 119.3623,155.46009 V 106.78688"
+       id="path3330"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#008000;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3160);opacity:1"
+       d="M 119.3623,100.44875 V 53.170198"
+       id="path8036"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#aa4400;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker3160)"
+       d="M 119.3623,47.697284 V 5.1816295"
+       id="path11593"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483;opacity:1"
+       x="126.49653"
+       y="59.125031"
+       id="text339983"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan339981"
+         style="stroke-width:0.407483"
+         x="126.49653"
+         y="59.125031"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif"
+   id="tspan11814">Ge</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif"
+   id="tspan127716">ometric</tspan> perspective</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483;opacity:1"
+       x="-88.878685"
+       y="116.98563"
+       id="text344963"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan344961"
+         style="stroke-width:0.407483"
+         x="-88.878685"
+         y="116.98563">Curvature</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="-31.343361"
+       y="116.98563"
+       id="text346045"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan346043"
+         style="stroke-width:0.407483"
+         x="-31.343361"
+         y="116.98563">Entropy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483;opacity:1"
+       x="-138.20804"
+       y="116.98563"
+       id="text365289"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan365287"
+         style="stroke-width:0.407483"
+         x="-138.20804"
+         y="116.98563">InfoNCE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483;opacity:1"
+       x="126.50183"
+       y="112.41096"
+       id="text367092"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan367090"
+         style="stroke-width:0.407483"
+         x="126.50183"
+         y="112.41096"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif"
+   id="tspan20054">R</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif"
+   id="tspan130142">obutness</tspan> perspective</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="162.21094"
+       y="7.1961389"
+       id="text369982"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.407483"
+         x="162.21094"
+         y="7.1961389"
+         id="tspan371520"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif"
+   id="tspan8758">Co</tspan>mpression  perspective</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="15.174087"
+       y="157.73772"
+       id="text378713"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan378711"
+         style="stroke-width:0.407483"
+         x="15.174087"
+         y="157.73772">CNN Enc.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483"
+       x="11.578582"
+       y="234.00824"
+       id="text383177"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan383175"
+         style="text-align:center;text-anchor:middle;stroke-width:0.407483"
+         x="11.578582"
+         y="234.00824">Speech</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.407483"
+         x="11.578582"
+         y="240.79962"
+         id="tspan3030">Input</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.407483"
+         x="11.578582"
+         y="247.59099"
+         id="tspan135080" /></text>
+    <g
+       id="g395533"
+       transform="matrix(1.0331107,0,0,1.0331107,-67.559179,-25.433467)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <ellipse
+         style="fill:#fffff8;fill-opacity:1;stroke:#000000;stroke-width:0.296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse392806"
+         cx="176.56444"
+         cy="61.496952"
+         rx="3.0409245"
+         ry="2.9321752"
+         inkscape:export-filename="/home/ssadok/Téléchargements/rect4218.png"
+         inkscape:export-xdpi="600"
+         inkscape:export-ydpi="600" />
+      <text
+         xml:space="preserve"
+         style="font-size:4.50858px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.338144"
+         x="175.19818"
+         y="63.175732"
+         id="text395130"><tspan
+           sodipodi:role="line"
+           id="tspan395128"
+           style="stroke-width:0.338144"
+           x="175.19818"
+           y="63.175732">1</tspan></text>
+    </g>
+    <ellipse
+       style="fill:#fffff8;fill-opacity:1;stroke:#000000;stroke-width:0.305801;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse395535"
+       cx="115.08543"
+       cy="95.723923"
+       rx="3.1416116"
+       ry="3.0292616"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.65786px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.34934;opacity:1"
+       x="113.67393"
+       y="97.458298"
+       id="text395539"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan395537"
+         style="stroke-width:0.34934"
+         x="113.67393"
+         y="97.458298">2</tspan></text>
+    <ellipse
+       style="fill:#fffff8;fill-opacity:1;stroke:#000000;stroke-width:0.305801;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse395645"
+       cx="114.95875"
+       cy="146.59097"
+       rx="3.1416116"
+       ry="3.0292616"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.65786px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.34934;opacity:1"
+       x="113.54726"
+       y="148.32535"
+       id="text395649"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan395647"
+         style="stroke-width:0.34934"
+         x="113.54726"
+         y="148.32535">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.61619px;line-height:0;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.646215;opacity:1"
+       x="138.40018"
+       y="239.07555"
+       id="text22152"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan22150"
+         style="line-height:0.95;stroke-width:0.646215"
+         x="138.40018"
+         y="239.07555"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:0.95;font-family:'AR PL UKai TW';-inkscape-font-specification:'AR PL UKai TW'"
+   id="tspan172378">INSIDE</tspan>SSL</tspan></text>
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87769"
+       width="6.9100838"
+       height="7.5122395"
+       x="132.93823"
+       y="206.71799"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87851"
+       width="6.9100838"
+       height="7.5122395"
+       x="143.89394"
+       y="206.71799"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87853"
+       width="6.9100838"
+       height="7.5122395"
+       x="155.64178"
+       y="206.71799"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#d1e9f8;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87855"
+       width="6.9100838"
+       height="7.5122395"
+       x="184.15649"
+       y="206.71799"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87945"
+       width="6.9100838"
+       height="7.5122395"
+       x="132.93823"
+       y="189.3475"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87947"
+       width="6.9100838"
+       height="7.5122395"
+       x="143.89394"
+       y="189.3475"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#7baffb;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87949"
+       width="6.9100838"
+       height="7.5122395"
+       x="155.64178"
+       y="189.3475"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87951"
+       width="6.9100838"
+       height="7.5122395"
+       x="184.15649"
+       y="189.3475"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87953"
+       width="6.9100838"
+       height="7.5122395"
+       x="132.93823"
+       y="180.49362"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#6295e2;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87955"
+       width="6.9100838"
+       height="7.5122395"
+       x="143.89394"
+       y="180.49362"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87957"
+       width="6.9100838"
+       height="7.5122395"
+       x="155.64178"
+       y="180.49362"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87959"
+       width="6.9100838"
+       height="7.5122395"
+       x="184.15649"
+       y="180.49362"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#5777a8;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87961"
+       width="6.9100838"
+       height="7.5122395"
+       x="132.93823"
+       y="171.31511"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87963"
+       width="6.9100838"
+       height="7.5122395"
+       x="143.89394"
+       y="171.31511"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87965"
+       width="6.9100838"
+       height="7.5122395"
+       x="155.64178"
+       y="171.31511"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:0.32247;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.964098;paint-order:markers fill stroke;opacity:1"
+       id="rect87967"
+       width="6.9100838"
+       height="7.5122395"
+       x="184.15649"
+       y="171.31511"
+       ry="0.47524202"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="162.27644"
+       y="183.32387"
+       id="text90119"
+       transform="scale(1.0477587,0.95441822)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan90117"
+         style="stroke-width:0.520601"
+         x="162.27644"
+         y="183.32387">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="162.27644"
+       y="192.70901"
+       id="text91085"
+       transform="scale(1.0477587,0.95441822)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan91083"
+         style="stroke-width:0.520601"
+         x="162.27644"
+         y="192.70901">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="162.27644"
+       y="202.38908"
+       id="text91089"
+       transform="scale(1.0477587,0.95441822)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan91087"
+         style="stroke-width:0.520601"
+         x="162.27644"
+         y="202.38908">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="162.27644"
+       y="220.71524"
+       id="text91093"
+       transform="scale(1.0477587,0.95441822)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan91091"
+         style="stroke-width:0.520601"
+         x="162.27644"
+         y="220.71524">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="209.23653"
+       y="-129.83592"
+       id="text91097"
+       transform="matrix(0,0.95441822,-1.0477587,0,0,0)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan91095"
+         style="stroke-width:0.520601"
+         x="209.23653"
+         y="-129.83592">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="209.23653"
+       y="-139.80533"
+       id="text91101"
+       transform="matrix(0,0.95441822,-1.0477587,0,0,0)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan91099"
+         style="stroke-width:0.520601"
+         x="209.23653"
+         y="-139.80533">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="209.23653"
+       y="-151.29195"
+       id="text91105"
+       transform="matrix(0,0.95441822,-1.0477587,0,0,0)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan91103"
+         style="stroke-width:0.520601"
+         x="209.23653"
+         y="-151.29195">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="209.23653"
+       y="-178.97934"
+       id="text91109"
+       transform="matrix(0,0.95441822,-1.0477587,0,0,0)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan91107"
+         style="stroke-width:0.520601"
+         x="209.23653"
+         y="-178.97934">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.94134px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.520601;opacity:1"
+       x="248.46339"
+       y="93.049263"
+       id="text108010"
+       transform="matrix(0.8901547,0.50341747,-0.55265088,0.81085444,0,0)"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan108008"
+         style="stroke-width:0.520601"
+         x="248.46339"
+         y="93.049263">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.4331px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.407483;opacity:1"
+       x="-196.864"
+       y="116.98563"
+       id="text118601"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan118599"
+         style="stroke-width:0.407483"
+         x="-196.864"
+         y="116.98563">GCM</tspan></text>
+    <ellipse
+       style="fill:#fffff8;fill-opacity:1;stroke:#000000;stroke-width:0.305801;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+       id="ellipse118603"
+       cx="114.95875"
+       cy="204.8154"
+       rx="3.1416116"
+       ry="3.0292616"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.65786px;line-height:1.25;font-family:serif;-inkscape-font-specification:'serif, Normal';stroke-width:0.34934;opacity:1"
+       x="113.54726"
+       y="206.43732"
+       id="text118709"
+       inkscape:export-filename="/home/ssadok/Téléchargements/ssl.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan118707"
+         style="stroke-width:0.34934"
+         x="113.54726"
+         y="206.43732">4</tspan></text>
+  </g>
+</svg>

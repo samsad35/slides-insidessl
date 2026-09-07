@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCM Audio Explorer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Custom grid definition */
+        .gcm-grid-row {
+            display: grid;
+            /* Label column + 13 data columns */
+            grid-template-columns: 35px repeat(13, minmax(0, 1fr));
+            gap: 4px;
+            align-items: center;
+        }
+        .gcm-cell {
+            height: 22px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .gcm-cell:hover {
+            background-color: #94a3b8; /* slate-400 */
+            transform: scale(1.1);
+        }
+        .gcm-cell.playing {
+            background-color: #0891b2; /* cyan-600 */
+            box-shadow: 0 0 10px rgba(8, 145, 178, 0.6);
+            animation: pulse-cell 1.5s infinite;
+        }
+        @keyframes pulse-cell {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        /* Style for HTML math approximation */
+        .math-style {
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="bg-transparent m-0 p-4 font-sans text-slate-800">
+
+    <div x-data="audioExplorer()" class="max-w-4xl mx-auto bg-white rounded-3xl p-6 border border-slate-200 shadow-sm relative">
+        
+        <!-- Header -->
+        <div class="mb-8 flex justify-between items-end gap-6">
+            <div>
+                <h2 class="text-2xl font-black mb-1 text-slate-900 italic tracking-tighter uppercase">GCM Audio Explorer</h2>
+                <!-- Fixed LaTeX approximation in description -->
+                <p class="text-slate-500 font-medium text-sm">
+                    Listen to representations decoded from layer 
+                    <span class="math-style text-base">D<sup>(i)</sup></span> 
+                    using tokens from layer 
+                    <span class="math-style text-base">Z<sup>(j)</sup></span>.
+                </p>
+            </div>
+            <!-- Audio Sample Selector (0 and 1 correspond to last number in filename) -->
+            <div class="flex bg-slate-50 p-1.5 rounded-xl border border-slate-200">
+                <button @click="audioIndex = 0; stopAudio();" :class="audioIndex === 0 ? 'bg-cyan-600 text-white shadow-md' : 'text-slate-500'" class="px-3 py-1.5 rounded-lg text-xs font-bold transition-all">Example 0</button>
+                <button @click="audioIndex = 1; stopAudio();" :class="audioIndex === 1 ? 'bg-cyan-600 text-white shadow-md' : 'text-slate-500'" class="px-3 py-1.5 rounded-lg text-xs font-bold transition-all ml-1">Example 1</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Panel: Now Playing -->
+            <div class="col-span-3 space-y-6">
+                <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100 min-h-[140px] shadow-inner flex flex-col justify-center">
+                    <h4 class="font-bold text-[10px] text-slate-400 uppercase tracking-widest mb-3 text-center">Now Playing</h4>
+                    
+                    <template x-if="playingCell">
+                        <div class="space-y-3 text-center">
+                            <!-- Fixed LaTeX approximation in Now Playing box -->
+                            <div class="flex justify-between text-[11px] font-mono font-bold text-slate-800 bg-white p-2 rounded-lg border border-slate-200">
+                                <span>
+                                    <span class="math-style">D</span><sup class="text-[8px]">(<span class="italic text-cyan-600" x-text="playingCell.i"></span>)</sup>
+                                </span>
+                                <span>
+                                    <span class="math-style">Z</span><sup class="text-[8px]">(<span class="italic text-pink-600" x-text="playingCell.j"></span>)</sup>
+                                </span>
+                            </div>
+                            <div class="flex gap-1.5 items-center justify-center h-8">
+                                <div class="w-1.5 bg-cyan-400 h-4 rounded-full animate-bounce"></div>
+                                <div class="w-1.5 bg-cyan-500 h-8 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                                <div class="w-1.5 bg-cyan-600 h-5 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template x-if="!playingCell">
+                        <div class="text-center py-2 opacity-40">
+                            <i data-lucide="music" class="w-6 h-6 mx-auto mb-1"></i>
+                            <p class="text-[10px] font-bold">Select a cell</p>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- Right Panel: The Matrix -->
+            <div class="col-span-9 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                <div class="w-full mx-auto">
+                    <!-- Column Headers (j: 0 to 12) -->
+                    <div class="gcm-grid-row mb-2">
+                        <div></div>
+                        <template x-for="j in 13" :key="'header-'+(j-1)">
+                            <div class="text-[10px] font-mono font-bold text-slate-400 text-center" x-text="j-1"></div>
+                        </template>
+                    </div>
+                    
+                    <!-- Matrix Rows -->
+                    <div class="flex flex-col gap-1">
+                        <template x-for="i in 13" :key="'row-'+(i-1)">
+                            <div class="gcm-grid-row">
+                                <!-- Row Header (i: 0 to 12) -->
+                                <div class="text-[10px] font-mono font-bold text-slate-400 text-right pr-2" x-text="i-1"></div>
+                                
+                                <!-- Cells -->
+                                <template x-for="j in 13" :key="'cell-'+(j-1)">
+                                    <div 
+                                        @click="playGCM(i-1, j-1)"
+                                        :class="[
+                                            (playingCell && playingCell.i === i-1 && playingCell.j === j-1) ? 'playing' : 
+                                            (i-1 === j-1 ? 'bg-slate-300' : 'bg-slate-200'),
+                                            'gcm-cell'
+                                        ]"
+                                        :title="'Decoder D(' + (i-1) + ') evaluated on representations Z(' + (j-1) + ')'"
+                                    ></div>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('audioExplorer', () => ({
+                audioIndex: 0, // Default to Example 0
+                playingCell: null,
+                audioPlayer: null,
+                
+                playGCM(i, j) {
+                    this.stopAudio();
+                    
+                    this.playingCell = {i, j};
+                    
+                    // New audio path structure: GCM-audio/{i}/{i}_{j}_{audioIndex}_rec.wav
+                    // Assuming html/ folder is at the same level as GCM-audio/
+                    const audioPath = `../GCM-audio/${i}/${i}_${j}_${this.audioIndex}_rec.wav`;
+                    
+                    this.audioPlayer = new Audio(audioPath);
+                    
+                    this.audioPlayer.play().catch(e => {
+                        console.warn("Audio file not found:", audioPath);
+                        // Optional visual feedback for missing file
+                        this.playingCell = null;
+                        alert(`Audio not found for D(${i}), Z(${j}), Ex(${this.audioIndex})\nPath: ${audioPath}`);
+                    });
+                    
+                    // When audio finishes, reset UI
+                    this.audioPlayer.onended = () => {
+                        this.playingCell = null;
+                    };
+                },
+
+                stopAudio() {
+                    if (this.audioPlayer) {
+                        this.audioPlayer.pause();
+                        this.audioPlayer.currentTime = 0;
+                    }
+                    this.playingCell = null;
+                }
+            }))
+        })
+    </script>
+</body>
+</html>
