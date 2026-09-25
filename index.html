@@ -53,7 +53,7 @@ $$ \global\def\issl{\small\text{\texttt{INSIDE}SSL}} $$
 .center.boite-90[
 ## $\issl$: Understanding Self-Supervised Speech Representations using a Model-Centric Perspective
 
- Long Oral 2 - Speech Representations and Alignment
+ **Long Oral 2 - Speech Representations and Alignment - Monday 28, 2026**
 ]
 
 .grid[
@@ -406,8 +406,9 @@ These questions drive our core motivation: the need for intrinsic, task-agnostic
 
 ---
 class: center, middle
+exclude: true
 
-# $\issl$'s Methodology
+# $\issl$'s methodology
 
 ---
 exclude: false
@@ -530,6 +531,12 @@ Analyzing the intrinsic properties of individual layers:
 ???
 Finally, we move beyond individual layers with our cross-layer perspective: the Generative Compatibility Matrix, or GCM. Rather than looking at layers in isolation, this maps the inter-layer dependencies, showing us the precise trajectory of how information is routed, preserved, or pruned throughout the entire network hierarchy.
 
+
+---
+class: middle, center
+
+# $\issl$'s methodology
+## Per-Layer Perspectives
 
 ---
 class: compression-slide
@@ -755,11 +762,6 @@ Despite the heavy noise added to the input, the network has processed the signal
 They remain tightly clustered together, separated from other tokens. The InfoNCE loss here is minimized. By measuring this across layers, we can pinpoint the exact depth where an SSL model successfully strips away acoustic noise to focus on the core semantic identity of the sound.
 
 ---
-class: middle, center
-
-# Per-Layer Analysis: Results & Discussion
-
----
 class: middle
 
 ##  Layer-wise analysis of SSL models 
@@ -853,7 +855,7 @@ exclude: true
 .grid[
 
 .caption[
-Effect of ASR fine-tuning scale (10 min, 100 h, 960 h) on DATA2VEC representations, illustrating how layer-wise properties
+Effect of ASR fine-tuning scale (10 min, 100 h, 960 h) on Data2Vec representations, illustrating how layer-wise properties
 (compression, geometry, and robustness) evolve after task adaptation.
 ]
 
@@ -940,6 +942,14 @@ First, notice that WavLM generally maintains a much lower InfoNCE loss. For dist
 However, there is one perturbation that defeats both models: Time Masking, the red line. The loss remains high and flat across all layers. It turns out that filtering out added noise is much easier than recovering temporal information that has been completely deleted.
 
 Finally, look at the deep layers of Wav2Vec2 on the left. Once again, we see that distinct anomaly: a sharp rebound in the loss across the final two layers, jumping from 1.0 to 3.0. While its middle layers successfully build robustness, the output layers suddenly become highly sensitive to acoustic variations again, likely driven by the fine-grained requirements of its vector quantization objective.
+
+
+---
+class: middle, center
+
+# $\issl$'s Methodology
+## Cross-Layer Perspectives
+
 
 ---
 class: crosslayer-slide
@@ -1212,7 +1222,7 @@ exclude: false
 .grid[
 
 .caption[
-The impact of training data (WAVLM-PLUS) and model size (WAVLM-LARGE) on SSL audio representations, showing how layer-wise properties (compression, geometry, and robustness) vary across models of different scales.
+The impact of training data (WAVLM-PLUS) and model size (WavLM-Large) on SSL audio representations, showing how layer-wise properties (compression, geometry, and robustness) vary across models of different scales.
 ]
 
 .center.kol-1-3[
@@ -1254,7 +1264,7 @@ count: false
 .grid[
 
 .caption[
-Effect of ASR fine-tuning scale (10 min, 100 h, 960 h) on DATA2VEC representations, illustrating how layer-wise properties
+Effect of ASR fine-tuning scale (10 min, 100 h, 960 h) on Data2Vec representations, illustrating how layer-wise properties
 (compression, geometry, and robustness) evolve after task adaptation.
 ]
 
