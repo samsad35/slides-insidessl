@@ -1268,6 +1268,35 @@ But curvature reveals a fascinating two-phase evolution. Early layers (0 to 8) a
 
 Finally, as seen in the InfoNCE plot, extensive fine-tuning actually overrides the original pre-training robustness in the deep layers, deliberately sacrificing some invariance to specialize the embeddings for the speech recognition task.
 
+---
+class: middle, annexe-slide
+count: true
+exclude: false
+
+## Robustness analysis
+
+.grid[
+.kol-1-2[
+.center.width-100[![](images/results/perturbation/perturbation-wav2vec2.png)]
+.caption[(a) Wav2Vec2]
+]
+.kol-1-2[
+.center.width-95[![](images/results/perturbation/perturbation-wavlm.png)]
+.caption[(b)  WavLM]
+]
+]
+
+.boite-90[**WavLM** builds progressive invariance to spectral noise, whereas **Wav2Vec2** suffers a sharp late-stage sensitivity spike. Both struggle to recover explicitly masked temporal information.]
+
+???
+Here, we break down the robustness metric by looking at specific signal perturbations instead of a global average. Wav2Vec2 is on the left, WavLM on the right.
+
+First, notice that WavLM generally maintains a much lower InfoNCE loss. For distortions like Gaussian Noise (in blue) and Pitch Shift (in orange), WavLM's loss steadily decreases in deeper layers. It actively builds invariance, which makes perfect sense given its denoising pre-training objective.
+
+However, there is one perturbation that defeats both models: Time Masking, the red line. The loss remains high and flat across all layers. It turns out that filtering out added noise is much easier than recovering temporal information that has been completely deleted.
+
+Finally, look at the deep layers of Wav2Vec2 on the left. Once again, we see that distinct anomaly: a sharp rebound in the loss across the final two layers, jumping from 1.0 to 3.0. While its middle layers successfully build robustness, the output layers suddenly become highly sensitive to acoustic variations again, likely driven by the fine-grained requirements of its vector quantization objective.
+
 
 
 
