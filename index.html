@@ -993,16 +993,7 @@ class: crosslayer-slide, middle
 .alert-90[.center[By computing this for all $(\ell, k)$ pairs, we map the exact trajectory of how acoustic content is abstracted layer by layer.]]
 
 ???
-Let's look at this 4x4 toy example to make it concrete. 
-
-Imagine we train a decoder specifically on the representations of Layer 1. This is the top row, highlighted with the red dashed line.
-    
-If we evaluate this decoder on embeddings from Layer 2, we get a strong compatibility score of 0.85. This means Layer 2 and Layer 1 share a stable functional core. They are essentially "speaking the same structural language."
-
-However, if we take that exact same decoder and feed it representations from Layer 4, the performance crashes down to 0.15. This degradation is highly informative: it tells us that a major representational shift has occurred. The network has pruned or abstracted the raw acoustic details so much that our early-layer decoder can no longer read them.
-
-By computing this matrix for all layers, the GCM gives us a complete topological map of how information flows and transforms throughout the network.
-
+Let's look at this 4x4 example. If a decoder trained on Layer 1 evaluates Layer 2, it scores high (0.85)—they speak the same language. But on Layer 4, the score crashes to 0.15. The deeper layer has abstracted the audio so much that the early decoder can't understand it anymore. By computing this for all layers, the matrix maps exactly how information transforms across the network."
 
 ---
 class: middle
@@ -1020,6 +1011,16 @@ count: false
 
 
 ???
+Let's look at the actual GCM heatmaps for Wav2Vec2: Phonetic Content on the left, and Speaker Identity on the right.
+
+While we can extract many conclusions from these matrices, let's focus on the most important one.
+
+Look at the Content matrix on the left. Layers 1 through 10 form a massive, stable block of phonetic encoding. But notice the sharp break exactly at layer 11. This sudden rupture perfectly visualizes the "entropy collapse" we observed earlier. The model suddenly compresses the information, and the phonetic stability crashes.
+
+
+-----------------------------
+
+
 Let's look at the actual GCM heatmaps for Wav2Vec2. We have Phonetic Content on the left, and Speaker Identity on the right. 
 
 There are three major takeaways here:
