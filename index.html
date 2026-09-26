@@ -362,6 +362,10 @@ count: false
 ]
 ]
 
+.credit[
+A. Pasad, J.-C. Chou, and K. Livescu, “Layer-wise analysis of a self-supervised speech representation model,” in ASRU. IEEE, 2021.
+]
+
 ???
 We end up with probing graphs like these—mapping layer depth against accuracy for specific labels like speaker, pitch, or emotion.
 
@@ -433,6 +437,8 @@ Analyzing the intrinsic properties of individual layers:
 ]
 ]
 
+.credit[O. Skean, M. R. Arefin, D. Zhao, N. Patel, J. Naghiyev, Y. LeCun, and R. Shwartz-Ziv, “Layer by layer: Uncovering hidden representations in language models,” arXiv, 2025.]
+
 ???
 To answer these questions, we introduce **InsideSSL**: a model-centric, task-agnostic framework.
 
@@ -464,6 +470,9 @@ Analyzing the intrinsic properties of individual layers:
 ]
 ]
 
+.credit[O. Skean, M. R. Arefin, D. Zhao, N. Patel, J. Naghiyev, Y. LeCun, and R. Shwartz-Ziv, “Layer by layer: Uncovering hidden representations in language models,” arXiv, 2025.]
+
+
 ???
 Our second perspective is **Geometry**, evaluated through curvature. This tracks the physical shape of the latent space, revealing exactly how the representation manifold unfolds and organizes itself layer by layer.
 
@@ -493,6 +502,9 @@ Analyzing the intrinsic properties of individual layers:
 
 ]
 ]
+
+.credit[O. Skean, M. R. Arefin, D. Zhao, N. Patel, J. Naghiyev, Y. LeCun, and R. Shwartz-Ziv, “Layer by layer: Uncovering hidden representations in language models,” arXiv, 2025.]
+
 
 ???
 Our third per-layer perspective is Robustness, measured via an InfoNCE loss. This allows us to pinpoint exactly where the model strips away acoustic noise and builds invariant, stable representations.
@@ -1053,17 +1065,14 @@ Here we have an interactive GCM audio explorer.
 
 ---
 class: middle
+exlude: true
 
 ## Linking Intrinsic Metrics to Downstream Tasks
 
 .grid[
-.kol-1-2.center[
+.kol-1-1.center[
 **Layer-wise Linear Probing**
 .width-100[![](images/results/probing/task-probing.png)] <!-- Remplacer par Fig 8 / probing curves -->
-]
-.kol-1-2.center[
-**Task vs. Metric Correlation**
-.width-100[![](images/results/probing/task-corr.png)] <!-- Remplacer par Fig 9 / corr matrix -->
 ]
 ]
 
@@ -1298,6 +1307,31 @@ However, there is one perturbation that defeats both models: Time Masking, the r
 
 Finally, look at the deep layers of Wav2Vec2 on the left. Once again, we see that distinct anomaly: a sharp rebound in the loss across the final two layers, jumping from 1.0 to 3.0. While its middle layers successfully build robustness, the output layers suddenly become highly sensitive to acoustic variations again, likely driven by the fine-grained requirements of its vector quantization objective.
 
+---
+class: middle, annexe-slide
+exlude: false
+
+## Linking Intrinsic Metrics to Downstream Tasks
+
+.grid[
+.kol-1-1.center[
+**Layer-wise Linear Probing**
+.width-100[![](images/results/probing/task-probing.png)] <!-- Remplacer par Fig 8 / probing curves -->
+]
+]
+
+- **Phonemes (Linguistic):** Peak in mid-layers. Negatively correlated with entropy and curvature. They benefit from **compression** and **linearization**.
+- **Pitch & Speaker (Paralinguistic):** Peak in early layers. Positively correlated with entropy and curvature. They rely on **feature richness** and a complex manifold.
+
+???
+To bring this all together, we need to connect our intrinsic metrics back to the real world using linear probing. 
+
+If we look at the probing curves on the left, a clear layer-wise hierarchy emerges. 
+Paralinguistic tasks, like Pitch and Speaker identification, peak in the very early layers. As we can see from the correlation matrix on the right, these tasks rely heavily on high entropy and high curvature. They need that raw, complex acoustic manifold before the details get pruned away.
+
+On the other hand, Phoneme classification peaks in the middle layers. Fascinatingly, this peak perfectly coincides with the curvature transition point we analyzed earlier. Phonemes require a geometric "sweet spot"—they need the network to compress the raw variance and flatten out the manifold to make the classes linearly separable, without over-compressing the core semantic signal.
+
+Ultimately, this proves that linguistic and paralinguistic tasks demand fundamentally opposed geometric properties from the latent space.
 
 
 
