@@ -903,10 +903,11 @@ Finally, as seen in the InfoNCE plot, extensive fine-tuning actually overrides t
 ---
 class: middle
 count: false
+exclude: true
 
 ## Training Dynamics & Geometric Relaxation
 
-.center[How does the representation manifold evolve during the very first training iteration?]
+.center[How does the representation manifold evolve during training iteration?]
 .center[
   <iframe src="html/curvature_steps_smooth_colors.html" width="80%" height="400px" style="border:none;" scrolling="no"></iframe>
 ]
@@ -926,6 +927,32 @@ To understand how these structures form, we tracked the curvature during the tra
 
 4. **Deep-Layer Relaxation:** In contrast, the deeper layers undergo a progressive relaxation. The curvature systematically drops. The network actively "flattens" its deep representations, a linearization process designed to make the data easily separable for downstream tasks.
 
+--
+class: middle
+count: false
+exclude: false
+
+## Training Dynamics & Geometric Relaxation
+
+.center[How does the representation manifold evolve during training iteration?]
+.center[
+.center.width-70[![](images/results/curvature-vs-iterations.png)]
+]
+
+.boite-90[**The Optimization Journey:** A sharp global surge to encode acoustic complexity, followed by a targeted deep-layer "flattening" to facilitate linear separability.]
+
+???
+To understand how these structures form, we tracked the curvature during the training of a HuBERT model. 
+
+*Note the color gradient: purple is initialization, shifting towards yellow as we reach convergence.*
+
+1. **Initialization (Purple):** At the very beginning, curvature is low and relatively uniform across all layers, sitting around 1.16.
+
+2. **The Surge (Dark Purple to Teal):** As optimization begins, we see a sharp global surge. Curvature rises to roughly 1.42. The model is rapidly encoding intricate acoustic complexity everywhere.
+
+3. **Structural Separation (Green to Yellow):** As training progresses, a clear split emerges. The early layers—up to about 40% depth—maintain this high curvature to keep encoding complex, local features. 
+
+4. **Deep-Layer Relaxation:** In contrast, the deeper layers undergo a progressive relaxation. The curvature systematically drops. The network actively "flattens" its deep representations, a linearization process designed to make the data easily separable for downstream tasks.
 
 
 ---
